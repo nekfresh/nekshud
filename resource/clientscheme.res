@@ -2214,7 +2214,7 @@ Scheme
 			"1"
 			{
 				"name"		"product sans bold"
-				"tall"		"8"
+				"tall"		"15"
 				"weight"	"0"
 				"additive"	"0"
 				"antialias" "1"
@@ -2225,7 +2225,7 @@ Scheme
 			"1"
 			{
 				"name"		"product sans bold"
-				"tall"		"10"
+				"tall"		"15"
 				"weight"	"0"
 				"additive"	"0"
 				"antialias" "1"
@@ -2236,7 +2236,7 @@ Scheme
 			"1"
 			{
 				"name"		"product sans bold"
-				"tall"		"10"
+				"tall"		"15"
 				"weight"	"0"
 				"additive"	"0"
 				"antialias" "1"
@@ -2247,7 +2247,7 @@ Scheme
 			"1"
 			{
 				"name"		"product sans bold"
-				"tall"		"10"
+				"tall"		"15"
 				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"

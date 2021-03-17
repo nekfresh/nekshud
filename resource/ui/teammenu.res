@@ -165,7 +165,7 @@
 		"border_default"	"noborder"
 		"border"	"noborder"
 		"command"		"jointeam red"
-		"team"				"3"		// team blue
+		"team"				"3"		// team red
 		"associated_model"	"bluedoor"
 		"hover"				"2.0"
 		"font"			"productbold58"

@@ -3149,5 +3149,3 @@
 		}
 	}
 }
-
-#base "../../resource/extras/hudstflink.res"
