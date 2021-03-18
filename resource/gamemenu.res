@@ -1,43 +1,52 @@
 "GameMenu" [$WIN32]
 {
-	"VRModeButton"
+	"HomeServer"
 	{
-		"label" 			"#MMenu_VRMode_Activate"
-		"command" 			"engine vr_toggle"
-		"subimage"			"glyph_vr"
-		"OnlyWhenVREnabled" "1"
+		"label"	""
+		"command" "engine JoinHomeServer"
+		"OnlyAtMenu" "1"
+		"tooltip" "Home Server"
+	}
+	"SteamWorkshopButton"
+	{
+		"label" "Workshop"
+		"command" "engine OpenSteamWorkshopDialog"
+		"subimage" "glyph_steamworkshop"
+		"tooltip" "Open Steam Workshop"
 	}
 
 	// These buttons are only shown while in-game
 	// and also are positioned by the .res file
-	"CallVoteButton"
-	{
-		"label"			""
-		"command"		"callvote"
-		"OnlyInGame"	"1"
-		"subimage" 		"replay/thumbnails/softicons/vote"
-	}
-	"MutePlayersButton"
-	{
-		"label"			""
-		"command"		"OpenPlayerListDialog"
-		"OnlyInGame"	"1"
-		"subimage" 		"replay/thumbnails/softicons/mic"
-	}
+
 	"RequestCoachButton"
 	{
 		"label"			""
 		"command"		"engine cl_coach_find_coach"
 		"OnlyInGame"	"1"
-		"subimage" 		"icon_whistle"
-		"tooltip" 		"#MMenu_RequestCoach"
+		"subimage" "icon_whistle"
+		"tooltip" "#MMenu_RequestCoach"
+	}
+	"CallVoteButton"
+	{
+		"label"			""
+		"command"		"callvote"
+		"OnlyInGame"	"1"
+		"subimage" "icon_checkbox"
+		"tooltip"	"#MMenu_CallVote"
+	}
+	"MutePlayersButton"
+	{
+		"label"			""
+		"command"		"OpenMutePlayerDialog"
+		"OnlyInGame"	"1"
+		"subimage" "glyph_muted"
+		"tooltip"	"#MMenu_MutePlayers"
 	}
 	"ReportPlayerButton"
 	{
 		"label"			""
 		"command"		"OpenReportPlayerDialog"
 		"OnlyInGame"	"1"
-		"subimage"		"glyph_alert"
 		"tooltip"		"#MMenu_ReportPlayer"
 	}
 }

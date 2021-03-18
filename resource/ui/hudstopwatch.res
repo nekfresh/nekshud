@@ -2,156 +2,157 @@
 {
 	"HudStopWatchBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"HudStopWatchBG"
-		"xpos"			"70"
+		"xpos"			"c19"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"0"
-		"tall"			"20"
-		"autoResize"		"0"
-		"pinCorner"		"1"
+		"wide"			"109"
+		"tall"			"14"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"	"noborder"
-		"fillcolor"	"0 0 0 0"
+		"fillcolor"		"HudBlack"
+
+		if_comp
+		{
+			"xpos"	"c-54"
+			"ypos"	"31"
+			"visible"	"0"
+		}
 	}
 
 	"StopWatchImageCaptureTime"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"StopWatchImageCaptureTime"
-		"wide"			"0"
+		"xpos"			"9999"
 	}
 
 	"ObjectiveStatusTimePanel"
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
-		"xpos"				"26"
-		"ypos"				"0"	[$WIN32]
-		"zpos"				"5"
-		"wide"				"70"
-		"tall"				"20"
-		"visible"			"0"
+		"xpos"				"c20"
+		"ypos"				"0"
+		"zpos"				"1"
+		"wide"				"110"
+		"tall"				"150"
+		"visible"			"1"
 		"enabled"			"1"
-		
+
+		if_comp
+		{
+			"xpos"	"c-52"
+			"ypos"	"31"
+		}
 
 		"TimePanelValue"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"productbold14"
-			"fgcolor"		"TanLight"
+			"font"			"aRegular14"
+			"fgcolor"		"ahudWhite"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"3"
-			"wide"			"44"
-			"bgcolor_override"			"0 0 0 165"
-			"useproportionaltextinsets"			"1"
-			"tall"			"20"
+			"wide"			"55"
+			"tall"			"15"
 			"visible"		"1"
 			"enabled"		"1"
 			"textAlignment"		"center"
-			
 		}
-			
 	}
 
 	"StopWatchScoreToBeat"
 	{
 		"ControlName"		"CExLabel"
-		"fieldName"		"StopWatchScoreToBeat"
-		"font"			"HudFontMediumBold"
-		"labelText"		"%scoretobeat%"
-		"textAlignment"		"center"
-		"xpos"			"0"
-		"ypos"			"6"
-		"zpos"			"4"
-		"wide"			"0"
-		"tall"			"30"
+		"fieldName"			"StopWatchScoreToBeat"
+		"font"				"aRegular14"
+		"labelText"			"%scoretobeat%"
+		"textAlignment"		"west"
+		"xpos"				"c70"
+		"ypos"				"0"
+		"zpos"				"4"
+		"wide"				"93"
+		"tall"				"15"
 		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
+		"pinCorner"			"0"
+		"visible"			"0"
+		"enabled"			"1"
+		"fgcolor"			"ahudWhite"
 
+		if_comp
+		{
+			"xpos"	"c-3"
+			"ypos"	"31"
+		}
 	}
+
 	"StopWatchPointsLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"StopWatchPointsLabel"
-		"font"			"productbold14"
-		"labelText"		"%scoretobeat%"
-		"textAlignment"		"east"
-		"xpos"			"12"
+		"font"			"aRegular12"
+		"labelText"		"%pointslabel%"
+		"textAlignment"		"west"
+		"xpos"			"c80"
 		"ypos"			"0"
-		"zpos"			"6"
-		"wide"			"14"
-		"tall"			"20"
-		"bgcolor_override"			"0 0 0 165"
+		"zpos"			"4"
+		"wide"			"120"
+		"tall"			"14"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"0"
+		"fgcolor"			"ahudWhite"
+
+		if_comp
+		{
+			"xpos"	"c7"
+			"ypos"	"31"
+		}
 	}
 
 	"StopWatchLabel"
 	{
 		"ControlName"		"CExLabel"
-		"fieldName"		"StopWatchLabel"
-		"font"			"PRODUCT8"
-		"labelText"		"%stopwatchlabel%"
+		"fieldName"			"StopWatchLabel"
+		"font"				"aRegular10"
+		"labelText"			"%stopwatchlabel%"
 		"textAlignment"		"center"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"4"
-		"wide"			"0"
-		"bgcolor"			"0 0 0 165"
-		"bgcolor_override"			"0 0 0 165"
-		"tall"			"20"
+		"xpos"				"c10"
+		"ypos"				"0"
+		"zpos"				"4"
+		"wide"				"125"
+		"tall"				"15"
 		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-		"wrap"			"1"
+		"pinCorner"			"0"
+		"visible"			"0"
+		"enabled"			"1"
+		"wrap"				"0"
+		"fgcolor"			"ahudWhite"
 
+		if_comp
+		{
+			"xpos"	"c-62"
+			"ypos"	"31"
+		}
 	}
 
 	"HudStopWatchDescriptionBG"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"HudStopWatchDescriptionBG"
-		"xpos"			"0"
-		"ypos"			"27"
-		"zpos"			"-1"
-		"wide"			"0"
-		"tall"			"19"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-	
-
+		"xpos"			"9999"
 	}
 
 	"StopWatchDescriptionLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"StopWatchDescriptionLabel"
-		"font"			"PRODUCT8"
-		"labelText"		"%descriptionlabel%"
-		"textAlignment"		"west"
-		"xpos"			"4"
-		"ypos"			"0"
-		"zpos"			"4"
-		"wide"			"0"
-		"tall"			"20"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"0"
-
+		"xpos"			"9999"
 	}
 }

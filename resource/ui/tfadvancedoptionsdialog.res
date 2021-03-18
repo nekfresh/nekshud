@@ -6,20 +6,20 @@
 		"fieldName"		"TFAdvancedOptionsDialog"
 		"xpos"		"c-250"
 		"ypos"		"90"
-		"wide"		"500"
+		"wide"		"450"
 		"tall"		"350"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"bgcolor_override"		"46 43 42 255"
+		"bgcolor_override"		"ahudDarkGrey"
 		"paintbackgroundtype"	"2"
 		"settitlebarvisible"	""
 		"paintborder"			"1"
-		"paintbackground"		"0"
-		"border"				"GrayDialogBorder"
-		
+		"paintbackground"		"1"
+		"border"				"ahudPanelBorder"
+
 		"control_w"			"500"
 		"control_h"			"25"
 		"slider_w"			"500"
@@ -29,29 +29,29 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TitleLabel"
-		"font"			"HudFontMediumBold"
+		"font"			"aBold24"
 		"labelText"		"#TF_AdvancedOptions"
 		"textAlignment"	"center"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"500"
+		"wide"			"450"
 		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "ahudWhite"
 	}
 	"CancelButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"CancelButton"
-		"xpos"			"150"
+		"xpos"			"100"
 		"ypos"			"310"
 		"zpos"			"1"
 		"wide"			"100"
-		"tall"			"25"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -71,11 +71,11 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"OkButton"
-		"xpos"			"300"
+		"xpos"			"250"
 		"ypos"			"310"
 		"zpos"			"1"
 		"wide"			"100"
-		"tall"			"25"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -91,15 +91,15 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
-	
+
 	"PanelListPanel"
 	{
 		"ControlName"		"CPanelListPanel"
 		"fieldName"		"PanelListPanel"
 		"xpos"		"10"
-		"ypos"		"40"
-		"wide"		"480"
-		"tall"		"260"
+		"ypos"		"35"
+		"wide"		"430"
+		"tall"		"270"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -107,7 +107,7 @@
 		"tabPosition"		"0"
 		"bgcolor_override"	"0 0 0 0"
 	}
-	
+
 	"TooltipPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -119,8 +119,9 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
-		
+		"border"		"ahudPanelBorder"
+		"bgcolor_override"	"ahudDarkerGrey"
+
 		"TipLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -137,9 +138,9 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"ahudWhite"
 			"wrap"			"1"
 			//"centerwrap"	"1"
 		}
-	}	
+	}
 }

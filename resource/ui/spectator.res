@@ -11,144 +11,138 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 	}
+
 	"specgui"
 	{
 	}
+
 	"topbar"
 	{
 		"ControlName"	"Panel"
-		"fieldName"	 "TopBar"
-		"xpos"	 "999999"
-		"ypos"	 "999999"
-		"wide"	 "0"
-		"tall"	 "0"
-		"visible"	 "0"
-		"enabled"	 "0"
+		"fieldName"		"TopBar"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 	}
+
 	"BottomBar"
 	{
 		"ControlName"	"Frame"
-		"fieldName"	 "BottomBar"
-		"xpos"	 "999999"
-		"ypos"	 "999999"
-		"wide"	 "0"
-		"tall"	 "0"
-		"visible"	 "0"
-		"enabled"	 "0"
+		"fieldName"		"BottomBar"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 	}
+
 	"bottombarblank"
 	{
-		"ControlName"	 "Panel"
-		"fieldName"	 "bottombarblank"
-		"xpos"	 "999999"
-		"ypos"	 "999999"
-		"wide"	 "0"
-		"tall"	 "0"
-		"visible"	 "0"
-		"enabled"	 "0"
+		"ControlName"		"Panel"
+		"fieldName"		"bottombarblank"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 	}
-	
-	"ExampleAnchor"
-    {
-        "ControlName"     "EditablePanel"
-        "fieldName"     "ExampleAnchor"
-        "xpos"             "0"
-        "ypos"             "46"
-        "wide"             "f0"
-        "tall"             "1"
-        "visible"         "1"
-        "enabled"         "1"
-    }
-	
+
 	"ReinforcementsLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ReinforcementsLabel"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"60"
-		"proportionaltoparent"	"1"
-		"text_center"			"1"
-		"textinsetx"			"28"
-		"tall"			"20"
+		"xpos"			"c-300"
+		"ypos"			"50"
+		"wide"			"600"
+		"tall"			"18"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#game_respawntime_in_secs"
 		"textAlignment"		"center"
-		"font"			"product8"
-		"bgcolor_override"			"0 0 0 165"
-		"border"			"noborder"
-		"auto_wide_tocontents" "1"
-		
-		"pin_to_sibling" "ExampleAnchor"
-        "pin_corner_to_sibling" "4"
-        "pin_to_sibling_corner" "4"
+		"font"			"aRegular18"
 	}
+
 	"BuyBackLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BuyBackLabel"
-		"xpos"			"9999"
+		"xpos"			"-3"
+		"ypos"			"0"
+		"wide"			"320"
+		"tall"			"30"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		""
+		"textAlignment"		"center"
+		"font"			"HudFontSmall"
+		"wrap"			"1"
+		"centerwrap"	"1"
 	}
+
 	"MapLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"MapLabel"
-		"xpos"			"99999"	[$WIN32]
+		"xpos"			"9999"
 	}
 	"ClassOrTeamLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ClassOrTeamLabel"
-		"xpos"			"999999"
+		"xpos"			"9999"
 	}
 	"SwitchCamModeKeyLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeKeyLabel"
-		"xpos"			"99999"		[$WIN32]
+		"xpos"			"9999"
 
 	}
 	"SwitchCamModeLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeLabel"
-		"xpos"			"99999"	[$WIN32]
+		"xpos"			"9999"
 	}
 	"CycleTargetFwdKeyLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdKeyLabel"
-		"xpos"			"99999"	[$WIN32]
+		"xpos"			"9999"
 	}
 	"CycleTargetFwdLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdLabel"
-		"xpos"			"99999"	[$WIN32]
+		"xpos"			"9999"
 	}
 	"CycleTargetRevKeyLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevKeyLabel"
-		"xpos"			"99999"	[$WIN32]
+		"xpos"			"9999"
 	}
 	"CycleTargetRevLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevLabel"
-		"xpos"			"99999"	[$WIN32]
+		"xpos"			"9999"
 	}
 	"TipLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TipLabel"
-		"xpos"			"99999"
+		"xpos"			"9999"
 	}
-
-
 	"itempanel"
 	{
 		"ControlName"	"CItemModelPanel"
@@ -156,90 +150,68 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"10"
-		"wide"			"140"
-		"tall"			"60"
+		"wide"			"190"
+		"tall"			"100"
 		"visible"		"0"
-		"border"		"noborder"
-		"bgcolor_override"		"0 0 0 0"
+		"bgcolor_override"		"HudBlack"
+		"paintbackground"	"1"
 		"PaintBackgroundType"	"0"
-		
-		"model_ypos"		"18"
+
+		"model_ypos"		"10"
 		"model_center_x"	"1"
 		"model_wide"		"90"
 		"model_tall"		"60"
-		
-		"text_xpos"		"4"
-		"text_ypos"		"7"
-		"text_wide"		"132"
+
+		"text_xpos"		"10"
+		"text_ypos"		"10"
+		"text_wide"		"170"
 		"text_center"	"1"
-		
+
 		"max_text_height"	"100"
-		"padding_height"	"4"
+		"padding_height"	"10"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
-		
+
 		"itemmodelpanel"
 		{
 			"fieldName"		"itemmodelpanel"
 			"use_item_rendertarget" "0"
 			"useparentbg"		"1"
+			"inventory_image_type"	"1"
 		}
-		
+
 		"ItemLabel"
-		{	
+		{
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
-			"font"			"product8"
-			"xpos"			"0"
-			"bgcolor_override"			"0 0 0 0"
-			"ypos"			"0"
+			"font"			"aRegular9"
+			"xpos"			"10"
+			"ypos"			"3"
 			"zpos"			"1"
 			"wide"			"270"
-			"tall"			"14"
-			"textinsetx"	"8"
+			"tall"			"9"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#FreezePanel_Item"
-			"textAlignment"	"west"
+			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
-		
-		"attriblabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"attriblabel"
-			"font"			"ItemFontAttribLarge"
-			"xpos"			"0"
-			"ypos"			"30"
-			"zpos"			"2"
-			"wide"			"0"
-			"tall"			"60"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"%attriblist%"
-			"textAlignment"	"south"
-			"fgcolor"		"235 226 202 255"
-			"centerwrap"	"1"
-		}
-		"background"
-		{
-			"ControlName"	"imagepanel"
-			"fieldName"		"background"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"-1"
-			"wide"			"f0"
-			"tall"			"f0"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"0 0 0 165"
-		}
+	}
+
+	"spectator_extras"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"spectator_extras"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 	}
 }

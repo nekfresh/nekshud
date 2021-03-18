@@ -1,269 +1,232 @@
 "Resource/UI/MvMScoreboard.res"
-{		
+{
 	"WaveStatusPanel"
 	{
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
-		"xpos"				"0"
-		"ypos"				"0"
+		"xpos"				"c-300"
+		"ypos"				"-5"
 		"zpos"				"0"
-		"wide"				"f0"
+		"wide"				"600"
 		"tall"				"67"
 		"visible"			"1"
 		"enabled"			"1"
-		
 		"verbose"			"1"
 	}
-	
+
+	"ScoreboardBackground"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"ScoreboardBackground"
+		"xpos"			"c-280"
+		"ypos"			"118"
+		"zpos"			"-1"
+		"wide"			"560"
+		"tall"			"187"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"HudBlack"
+	}
+
 	"PopFileLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PopFileLabel"
-		"font"			"productbold10"
+		"font"			"aRegular9"
 		"labelText"		"%popfile%"
-		"textAlignment"	"east"
-		"xpos"			"c-264"
-		"ypos"			"c-67"
-		"wide"			"524"
-		"tall"			"16"
-		"fgcolor"		"tanlight"
-		"AllCaps"		"1"
+		"textAlignment"	"west"
+		"xpos"			"c-280"
+		"ypos"			"103"
+		"wide"			"150"
+		"tall"			"20"
+		"fgcolor"		"ahudWhite"
 	}
 
 	"DifficultyContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
-		"xpos"			"c12"
-		"ypos"			"999"
-		"wide"			"248"
-		"tall"			"20"
-		"visible"		"0"
-		
+		"xpos"			"c130"
+		"ypos"			"95"
+		"wide"			"150"
+		"tall"			"50"
+		"visible"		"1"
+
 		"DifficultyLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyLabel"
-			"font"			"HudFontSmallest"
+			"font"			"aRegular9"
 			"labelText"		"#TF_MvM_Difficulty"
-			"textAlignment"	"center"
-			"xpos"			"0"
-			"ypos"			"999"
-			"wide"			"150"
-			"tall"			"10"
-			"fgcolor"		"tanlight"
-			"visible"		"0"
-		}
-		
-		"DifficultyValue"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"DifficultyValue"
-			"font"			"productbold10"
-			"labelText"		"%difficultyvalue%"
-			"textAlignment"	"center"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"
 			"wide"			"150"
 			"tall"			"20"
-			"fgcolor"		"tanlight"
+			"fgcolor"		"ahudWhite"
+		}
+
+		"DifficultyValue"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"DifficultyValue"
+			"font"			"aRegular9"
+			"labelText"		"%difficultyvalue%"
+			"textAlignment"	"east"
+			"xpos"			"0"
+			"ypos"			"8"
+			"wide"			"150"
+			"tall"			"20"
+			"fgcolor"		"ahudWhite"
 		}
 	}
-	
+
 	"PlayerListBackground"
 	{
-		"ControlName"		"ScalableImagePanel"
+		"ControlName"		"ImagePanel"
 		"fieldName"		"PlayerListBackground"
-		"xpos"			"25"
-		"ypos"			"75"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"-1"
-		"wide"			"550"
-		"tall"			"150"
+		"wide"			"510"
+		"tall"			"140"
 		"visible"		"0"
-		"enabled"		"1"
-		"image"			"../hud/tournament_panel_brown"
-		
+		"enabled"		"0"
+		"fillcolor"		"TanLight"
+
 		"scaleImage"		"1"
-		
+
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"
-	
-		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+
+		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"
 	}
-	
+
 	"MvMPlayerList"
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"MvMPlayerList"
-		"xpos"			"c-264"
-		"ypos"			"c-52"
-		"wide"			"530"
-		"tall"			"150"
+		"xpos"			"c-270"
+		"ypos"			"122"
+		"wide"			"540"
+		"tall"			"110"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"	"22"
-		"textcolor"		"White"
+		"linespacing"	"16"
+		"textcolor"		"ahudWhite"
+		"font"			"aRegular10"
 	}
-	
+
 	"CreditStatsContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditStatsContainer"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
+		"xpos"			"c-250"
+		"ypos"			"205"
+		"wide"			"515"
+		"tall"			"205"
 		"visible"		"1"
-		
+
 		"CreditStatsBackground"
 		{
 			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"CreditStatsBackground"
-			"xpos"			"0"
-			"ypos"			"0"
+			"xpos"			"9999"
+			"ypos"			"9999"
 			"zpos"			"-1"
 			"wide"			"400"
 			"tall"			"135"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
-			"enabled"		"1"
+			"enabled"		"0"
 			"image"			"../HUD/tournament_panel_brown"
 
 			"src_corner_height"	"22"				// pixels inside the image
 			"src_corner_width"	"22"
-		
-			"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+
+			"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" "0"
 		}
-		
+
 		"CreditsLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditsLabel"
-			"font"			"HudFontMediumSmall"
+			"font"			"aRegular14"
 			"labelText"		"#TF_PVE_Currency"
-			"textAlignment" "north-west"
-			"xpos"			"8"
-			"ypos"			"999"
-			"wide"			"100"
-			"tall"			"25"
-			"fgcolor"		"tanlight"
-			"visible"		"0"
+			"textAlignment" "center"
+			"xpos"			"9999"
+			"ypos"			"9999"
+			"wide"			"200"
+			"fgcolor"		"ahudWhite"
 		}
-		
+
 		"PreviousWaveCreditInfoPanel"
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"PreviousWaveCreditInfoPanel"
-			"xpos"			"c-266"
-			"ypos"			"c97"
-			"wide"			"127"
+			"xpos"			"0"
+			"ypos"			"30"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
 		}
-		
+
 		"TotalGameCreditInfoPanel"
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"TotalGameCreditInfoPanel"
-			"xpos"			"c13"
-			"ypos"			"c97"
-			"wide"			"127"
+			"xpos"			"260"
+			"ypos"			"30"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
 		}
-		
+
 		"PreviousWaveCreditSpendPanel"
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"PreviousWaveCreditSpendPanel"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"127"
+			"xpos"			"130"
+			"ypos"			"30"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
-			
-			"pin_to_sibling" 		"PreviousWaveCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 		}
-		
+
 		"TotalGameCreditSpendPanel"
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"TotalGameCreditSpendPanel"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"127"
+			"xpos"			"390"
+			"ypos"			"30"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
-			
-			"pin_to_sibling" 		"TotalGameCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
-		}
-		
-		"HorizontalLineCover1"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"HorizontalLineCover1"
-			"xpos"			"0"
-			"ypos"			"-4"
-			"wide"			"1"
-			"tall"			"32"
-			"zpos"			"20"
-			"alpha"			"255"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"250 250 250 0"
-			"border"		"LightWhiteLeft"
-			
-			"pin_to_sibling" 		"PreviousWaveCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
-		}
-		
-		"HorizontalLineCover2"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"HorizontalLineCover2"
-			"xpos"			"0"
-			"ypos"			"-4"
-			"wide"			"1"
-			"tall"			"32"
-			"zpos"			"20"
-			"alpha"			"255"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"250 250 250 0"
-			"border"		"LightWhiteLeft"
-			
-			"pin_to_sibling" 		"TotalGameCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 		}
 
 		"RespecStatusLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"RespecStatusLabel"
-			"font"			"HudFontSmall"
+			"font"			"aRegular14"
 			"labelText"		"%respecstatus%"
-			"textAlignment" "north-east"
-			"xpos"			"115"
-			"ypos"			"8"
-			"wide"			"275"
-			"tall"			"20"
-			"fgcolor"		"tanlight"
+			"textAlignment" "center"
+			"xpos"			"30"
+			"ypos"			"88"
+			"wide"			"460"
+			"tall"			"18"
+			"fgcolor"		"ahudWhite"
 		}
 	}
 }

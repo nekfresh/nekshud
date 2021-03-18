@@ -1,346 +1,202 @@
 "Resource/UI/FreezePanel_Basic.res"
 {
-	"FreezePanel"
-	{
-		"ControlName"	"CTFFreezePanel"
-		"fieldName"		"FreezePanel"
-
-		"screenshot_move_panel_to_corner"	"0"
-	}
-
-			
-			
-			
 	"itempanel"
 	{
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"itempanel"
-		"xpos"			"99999"
-		"ypos"			"99999"
-		"zpos"			"1"
-		"wide"			"0"
-		"tall"			"0"
+		"xpos"			"r200"
+		"ypos"			"0"
+		"zpos"			"10"
+		"wide"			"190"
+		"tall"			"100"
 		"visible"		"0"
-		"bgcolor_override"		"softshadowdarker"
-		"border"		"noborder"
-		"bgcolor"		"softshadowdarker"
-		"paintbackground"		"1"
-		"paintbackgroundtype"		"2"
+		"bgcolor_override"		"HudBlack"
+		"paintbackground"	"1"
+		"PaintBackgroundType"	"0"
 
-		"model_xpos"		"35"
-		"model_ypos"		"18"
-		"model_center_y"	"0"
-		"model_center_x"	"0"
+		"model_ypos"		"10"
+		"model_center_x"	"1"
 		"model_wide"		"90"
-		"model_tall"		"55"
+		"model_tall"		"60"
 
-		"text_xpos"		"8"
-		"text_ypos"		"8"
-		"text_wide"		"144"
+		"text_xpos"		"10"
+		"text_ypos"		"10"
+		"text_wide"		"170"
 		"text_center"	"1"
 
-		"max_text_height"	"90"
-		"padding_height"	"8"
+		"max_text_height"	"100"
+		"padding_height"	"10"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
 
 		"itemmodelpanel"
 		{
 			"fieldName"		"itemmodelpanel"
-			"use_item_rendertarget" "1"
+			"use_item_rendertarget" "0"
 			"useparentbg"		"1"
+			"inventory_image_type"	"1"
 		}
 
-		
 		"ItemLabel"
-		{	
+		{
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
-			"font"			"product8"
-			"xpos"			"0"
-			"bgcolor_override"			"0 0 0 0"
-			"ypos"			"0"
+			"font"			"DefaultSmall"
+			"xpos"			"10"
+			"ypos"			"3"
 			"zpos"			"1"
 			"wide"			"270"
-			"tall"			"14"
-			"textinsetx"	"8"
+			"tall"			"9"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#FreezePanel_Item"
-			"textAlignment"	"west"
+			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
-		
-		"attriblabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"attriblabel"
-			"font"			"ItemFontAttribLarge"
-			"xpos"			"0"
-			"ypos"			"30"
-			"zpos"			"2"
-			"wide"			"0"
-			"tall"			"60"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"%attriblist%"
-			"textAlignment"	"south"
-			"fgcolor"		"235 226 202 255"
-			"centerwrap"	"1"
-		}
-		"background"
-		{
-			"ControlName"	"imagepanel"
-			"fieldName"		"background"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"-1"
-			"wide"			"f0"
-			"tall"			"f0"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"0 0 0 165"
-		}
 	}
-	
-	"FreezePanelBase"	[$WIN32]
+
+	"FreezePanelBase"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"FreezePanelBase"
-		"xpos"			"0"
-		"ypos"			"0"		
-		"wide"			"f0"		
-		"tall"			"f0"		
+		"xpos"			"c-100"
+		"ypos"			"260"
+		"wide"			"190"
+		"tall"			"32"
 		"visible"		"1"
 
 		"FreezePanelBG"
 		{
-			"ControlName"		"CTFImagePanel"
+			"ControlName"		"ImagePanel"
 			"fieldName"		"FreezePanelBG"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"11"
 			"zpos"			"0"
-			"wide"			"256"
-			"tall"			"0"
+			"wide"			"190"
+			"tall"			"12"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"../hud/color_panel_blu"
-			"scaleImage"		"1"	
-			
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-				
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			//"image"			"../hud/color_panel_blu"
+			"fillcolor"		"HudBlack"
 		}
-		
+
 		"FreezeLabel"
-		{	
-			"ControlName"		"Label"
+		{
+			"ControlName"		"CExLabel"
 			"fieldName"		"FreezeLabel"
-			"font"			"DefaultSmall"
-			"xpos"			"0"
-			"ypos"			"0"
+			"font"			"aTargetIDData"
+			"fgcolor"		"ahudWhite"
+			"xpos"			"54"
+			"ypos"			"1"
 			"zpos"			"1"
-			"wide"			"0"
-			"tall"			"0"
+			"wide"			"131"
+			"tall"			"10"
 			"autoResize"		"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#FreezePanel_Killer"
-			"textAlignment"		"North-West"
+			"textAlignment"		"west"
 			"dulltext"		"0"
 			"brighttext"		"0"
 		}
-		
-		"FreezePanelHealth"		[$WIN32]
+
+		"FreezePanelHealth"
 		{
 			"ControlName"	"CTFFreezePanelHealth"
 			"fieldName"		"FreezePanelHealth"
-			"xpos"			"c-99"
-			"ypos"			"c30"
-			"zpos"			"21"
-			"wide"			"200"
-			"tall"			"50"
+			"xpos"			"0"
+			"ypos"			"2"
+			"zpos"			"1"
+			"wide"			"44"
+			"tall"			"36"
 			"visible"		"1"
-			"enabled"		"1"	
-			"HealthBonusPosAdj"	"0"
-			"HealthDeathWarning"	".49"
-		}	
+			"enabled"		"1"
+			"HealthBonusPosAdj"	"9"
+			"HealthDeathWarning"	"0.49"
+			"TFFont"		"HudFontSmall"
+			"HealthDeathWarningColor"	"HUDDeathWarning"
+			"TextColor"		"HudOffWhite"
+		}
 
 		"FreezeLabelKiller"
-		{	
-			"ControlName"	"Label"
+		{
+			"ControlName"	"CExLabel"
 			"fieldName"		"FreezeLabelKiller"
-			"font"			"product14"
-			"xpos"			"0"
-			"ypos"			"c65"
-			"zpos"			"25"
-			"wide"			"f0"
-			"tall"			"22"
+			"font"			"aRegular11"
+			"fgcolor"		"ahudWhite"
+			"xpos"			"54"
+			"ypos"			"11"
+			"zpos"			"5"
+			"wide"			"131"
+			"tall"			"12"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%killername%"
-			"textAlignment"		"center"
-	
+			"textAlignment"		"west"
+		}
+		"FreezeLabelKillerShadow"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"FreezeLabelKillerShadow"
+			"font"			"aRegularShadow11"
+			"fgcolor"		"ShadowBlack"
+			"xpos"			"0"
+			"ypos"			"-1"
+			"zpos"			"5"
+			"wide"			"131"
+			"tall"			"12"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"%killername%"
+			"textAlignment"		"west"
+
+			"pin_to_sibling"	"FreezeLabelKiller"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPLEFT"
 		}
 
 		"AvatarImage"
 		{
-			"ControlName"		"CAvatarImagePanel"
+			"ControlName"		"ImagePanel"
 			"fieldName"		"AvatarImage"
+			"xpos"			"9999"
+			"ypos"			"9999"
+			"zpos"			"0"
 			"wide"			"0"
-		}	
-		
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"image"			""
+			"scaleImage"		"1"
+			"color_outline"		"52 48 45 255"
+		}
+
 		"NemesisSubPanel"
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"		"NemesisSubPanel"
-			"xpos"			"9999"		// FIXME
-			"ypos"			"130"
-			"zpos"			"4"
 			"wide"			"0"
 			"tall"			"0"
-			"visible"		"1"
-
-			"NemesisPanelBG"
-			{
-				"ControlName"		"ScalableImagePanel"
-				"fieldName"		"NemesisPanelBG"
-				"xpos"			"95"
-				"ypos"			"4"
-				"zpos"			"5"
-				"wide"			"161"
-				"tall"			"30"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"../hud/color_panel_brown"
-				"scaleImage"		"1"	
-				
-				"src_corner_height"		"23"				// pixels inside the image
-				"src_corner_width"		"23"
-					
-				"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
-				"draw_corner_height" 	"6"	
-			}
-			"NemesisIcon"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"NemesisIcon"
-				"xpos"			"95"
-				"ypos"			"-1"
-				"zpos"			"6"
-				"wide"			"36"
-				"tall"			"36"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"../hud/leaderboard_nemesis_freezecam"
-				"scaleImage"	"1"	
-			}		
-			"NemesisLabel"
-			{	
-				"ControlName"		"Label"
-				"fieldName"		"NemesisLabel"
-				"font"			"HudFontMediumSmall"
-				"xpos"			"134"
-				"ypos"			"10"
-				"zpos"			"6"
-				"wide"			"112"
-				"tall"			"18"
-				"autoResize"		"0"
-				"pinCorner"		"0"
-				"visible"		"1"
-				"enabled"		"1"
-				"labelText"		"%nemesisname%"
-				"textAlignment"		"west"
-			}
-			"NemesisLabel2"
-			{	
-				"ControlName"		"Label"
-				"fieldName"		"NemesisLabel2"
-				"font"			"DefaultSmall"
-				"xpos"			"134"
-				"ypos"			"10"
-				"zpos"			"6"
-				"wide"			"112"
-				"tall"			"18"
-				"autoResize"		"0"
-				"pinCorner"		"0"
-				"visible"		"0"
-				"enabled"		"1"
-				"labelText"		"%nemesisadvice%"
-				"textAlignment"		"west"
-			}
+			"visible"		"0"
+			"enabled"		"0"
 		}
 	}
-		
+
 	"ScreenshotPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"ScreenshotPanel"
-		"xpos"			"9999"
-		"ypos"			"0"
-		"zpos"			"2"
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
-			
-		"ScreenshotPanelBG"
-		{
-			"ControlName"		"ImagePanel"
-			"fieldName"		"ScreenshotPanelBG"
-			"xpos"			"0"
-			"ypos"			"8"
-			"zpos"			"0"
-			"wide"			"166"
-			"tall"			"38"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"../hud/freezecam_black_bg"
-			"scaleImage"		"1"
-		}
-		"ScreenshotIcon"
-		{
-			"ControlName"		"ImagePanel"
-			"fieldName"		"ScreenshotIcon"
-			"xpos"			"3"
-			"ypos"			"0"
-			"zpos"			"1"
-			"wide"			"36"
-			"tall"			"36"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"../hud/ico_camera"
-			"scaleImage"	"1"	
-		}		
-		"ScreenshotLabel"
-		{	
-			"ControlName"		"Label"
-			"fieldName"		"ScreenshotLabel"
-			"font"			"SpectatorKeyHints"
-			"xpos"			"40"
-			"ypos"			"25"
-			"zpos"			"2"
-			"wide"			"133"
-			"tall"			"12"
-			"autoResize"		"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"%text%"
-			"textAlignment"		"west"
-			"dulltext"		"0"
-			"brighttext"		"0"
-		}
-	}	
+		"enabled"		"0"
+	}
 }

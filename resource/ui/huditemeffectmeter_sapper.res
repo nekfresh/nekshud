@@ -1,11 +1,9 @@
 #base "huditemeffectmeter.res"
 
-// Sapper
-
-"Resource/UI/HudItemEffectMeter_SodaPopper.res"
+"Resource/UI/HudItemEffectMeter_Sapper.res"
 {
-	HudItemEffectMeter
+	"HudItemEffectMeter"
 	{
-		"ypos"			"r141"
-	}	
+		"ypos"			"c103"
+	}
 }

@@ -1,26 +1,22 @@
-#base "heavy_blue.res"
+#base "heavy_red.res"
 
-"Resource/UI/disguise_menu/heavy_red.res"
+"Resource/UI/disguise_menu/engineer_blue.res"
 {
 	"ItemNameLabel"
 	{
 		"labelText"		"#TF_Class_Name_Engineer"
+		"fgcolor"		"153 194 216 255"
 	}
 
-	"ClassIcon"	
-	{
-		"icon"			"hud_menu_engineer_blu"
-	}
-	
 	"NewNumberLabel"
 	{
+		"fgcolor"		"153 194 216 255"
 		"labelText"		"3"
-		"bgcolor_override"	"softblue200"
 	}
-	
+
 	"NumberLabel"
-	{		
+	{
+		"fgcolor"		"153 194 216 255"
 		"labelText"		"6"
-		"bgcolor_override"	"softblue200"
 	}
 }

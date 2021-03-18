@@ -4,18 +4,13 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"HudStopWatchObjective"
-		"xpos"				"15"
-		"ypos"				"105"
+		"xpos"				"9999"
+		"ypos"				"9999"
 		"zpos"				"1"
-		"wide"				"0"
-		"tall"				"0"
+		"wide"				"275"
+		"tall"				"130"
 		"visible"			"0"
 		"enabled"			"1"
-
-		if_comp
-		{
-			"ypos"	"120"
-		}
 
 		"HudStopWatchObjectiveBG"
 		{
@@ -25,19 +20,18 @@
 			"ypos"			"0"
 			"zpos"			"-1"
 			"wide"			"275"
-			"tall"			"170"
+			"tall"			"130"
 			"autoResize"		"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../HUD/color_panel_browner"
-	
-	
+
 			"src_corner_height"	"23"				// pixels inside the image
 			"src_corner_width"	"23"
-		
+
 			"draw_corner_width"	"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		"HudStopWatchObjectiveBGSmall"
 		{
@@ -47,22 +41,21 @@
 			"ypos"			"0"
 			"zpos"			"-1"
 			"wide"			"275"
-			"tall"			"100"
+			"tall"			"80"
 			"autoResize"		"0"
 			"pinCorner"		"0"
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"../HUD/color_panel_browner"
-	
-	
+
 			"src_corner_height"	"23"				// pixels inside the image
 			"src_corner_width"	"23"
-		
+
 			"draw_corner_width"	"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		"HudStopWatchObjectiveLabel"
-		{	
+		{
 			"ControlName"		"Label"
 			"fieldName"		"HudStopWatchObjectiveLabel"
 			"font"			"HudFontSmallBoldShadow"
@@ -111,7 +104,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"tabPosition"	"0"	
+			"tabPosition"	"0"
 			"fillcolor"		"125 125 125 125"
 			"PaintBackgroundType"	"0"
 		}
@@ -120,10 +113,10 @@
 		{
 			"ControlName"		"CExRichText"
 			"fieldName"		"HudStopWatchObjectiveText2"
-			"xpos"			"25"	[$WIN32]
-			"ypos"			"75"	[$WIN32]
+			"xpos"			"25"
+			"ypos"			"75"
 			"wide"			"225"
-			"tall"			"165"
+			"tall"			"150"
 			"wrap"			"1"
 			"autoResize"		"1"
 			"pinCorner"		"1"
@@ -134,14 +127,14 @@
 			"font"			"HudFontSmallestShadow"
 			"maxchars"		"-1"
 		}
-	}	
+	}
 
 	"HudStopWatchObjectiveArrow"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"HudStopWatchObjectiveArrow"
-		"xpos"			"25"
-		"ypos"			"30"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"-1"
 		"wide"			"80"
 		"tall"			"80"
@@ -150,10 +143,5 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../HUD/arrow_big"
-
-		if_comp
-		{
-			"ypos"	"45"
-		}
 	}
 }

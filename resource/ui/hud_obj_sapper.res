@@ -7,51 +7,51 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"150"
-		"tall"			"31"
+		"tall"			"177"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 	}
-	
+
 	"Background"
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"Background"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"-1"
 		"wide"			"120"
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"icon"			"obj_status_background_red"
 		"iconColor"		"255 255 255 255"
 	}
-	
+
 	"Icon"
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"Icon"
 		"xpos"			"24"
-		"ypos"			"1"
+		"ypos"			"147"
 		"wide"			"28"
 		"tall"			"28"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"icon"			"obj_status_sapper"
 		"iconColor"		"255 255 255 255"
 	}
-	
+
 	"NotBuiltPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"NotBuiltPanel"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"146"
 		"wide"			"160"
 		"tall"			"31"
 		"visible"		"1"
@@ -75,19 +75,19 @@
 			"brighttext"	"0"
 		}
 	}
-	
+
 	"BuiltPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BuiltPanel"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"146"
 		"wide"			"160"
 		"tall"			"43"
 		"visible"		"0"
 
 		"Health"
-		{	
+		{
 			"ControlName"	"CBuildingHealthBar"
 			"fieldName"		"Health"
 			"font"			"Default"
@@ -132,16 +132,16 @@
 				"dulltext"		"0"
 				"brighttext"	"0"
 			}
-			
+
 			"BuildingProgress"
-			{	
+			{
 				"ControlName"	"ContinuousProgressBar"
 				"fieldName"		"BuildingProgress"
 				"font"			"Default"
 				"xpos"			"0"
 				"ypos"			"16"
 				"wide"			"50"
-				"tall"			"8"				
+				"tall"			"8"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -151,7 +151,7 @@
 				"brighttext"	"0"
 			}
 		}
-	
+
 		"RunningPanel"
 		{
 			"ControlName"	"EditablePanel"
@@ -161,7 +161,7 @@
 			"wide"			"100"
 			"tall"			"31"
 			"visible"		"0"
-			
+
 			"TargetIcon"
 			{
 				"ControlName"	"CIconPanel"
@@ -172,13 +172,13 @@
 				"tall"			"20"
 				"visible"		"1"
 				"enabled"		"1"
-				"scaleImage"	"1"	
+				"scaleImage"	"1"
 				"icon"			"obj_status_sentrygun_1"
 				"iconColor"		"255 255 255 255"
 			}
-			
+
 			"TargetHealth"
-			{	
+			{
 				"ControlName"	"ContinuousProgressBar"
 				"fieldName"		"TargetHealth"
 				"font"			"Default"

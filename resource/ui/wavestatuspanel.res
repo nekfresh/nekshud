@@ -4,150 +4,92 @@
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"Background"
-		"xpos"			"0"
-		"ypos"			"6"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"-1"
 		"wide"			"200"
 		"tall"			"35"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
+		"enabled"		"0"
+		"image"			"../HUD/tournament_panel_brown"
 
-		"src_corner_height"	"22"				// pixels inside the image
+		"src_corner_height"	"22"			// pixels inside the image
 		"src_corner_width"	"22"
-	
+
 		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
+		"draw_corner_height" 	"0"
 	}
-	
-	"WaveProgBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"WaveProgBG"
-		"xpos"			"c-100"
-		"ypos"			"6"
-		"wide"			"200"
-		"tall"			"20"
-		"zpos"			"0"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"0 0 0 165"
-		
-		// MINMODE
-		"tall_minmode"		"12"
-	}
-	
+
 	"WaveCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"WaveCountLabel"
-		"font"			"product8"
-		"fgcolor"		"TanLight"
-		"xpos"			"c-100"
-		"ypos"			"4"
+		"font"			"aRegular12"
+		"fgcolor"		"ahudWhite"
+		"xpos"			"200"
+		"ypos"			"5"
 		"zpos"			"3"
-		"wide"			"46"
-		"tall"			"20"
+		"wide"			"200"
+		"tall"			"15"
+		"xpos_minmode"	"80"
 		"visible"		"1"
 		"enabled"		"1"
-		"textinsetx"	"12"
-		"textAlignment"				"west"
-		"textAlignment_minmode"		"west"
+		"textAlignment"				"center"
 		"labelText"					"%wave_count%"
-		
-		"bgcolor_override"	"255 0 0 0"
-		
-		// MINMODE
-		"tall_minmode"		"16"
 	}
-	
-	"ProgressBar"
+
+	"WaveCountLabelShadow"
 	{
-		"ControlName"	"ScalableImagePanel"
-		"fieldName"		"ProgressBar"
-		"xpos"			"c-96"
-		"ypos"			"21"
+		"ControlName"	"CExLabel"
+		"fieldName"		"WaveCountLabelShadow"
+		"font"			"aRegular12"
+		"fgcolor"		"ShadowBlack"
+		"xpos"			"-1"
+		"ypos"			"-1"
 		"zpos"			"3"
-		"wide"			"190"
-		"tall"			"1"
+		"wide"			"200"
+		"tall"			"15"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/blue"
-		
-		"src_corner_height"		"22"				// pixels inside the image
-		"src_corner_width"		"22"
-	
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"
-		
-		// MINMODE
-		"xpos_minmode"	"c-60"
-		"ypos_minmode"	"12"
-		"wide_minmode"	"154"
+		"textAlignment"				"center"
+		"labelText"					"%wave_count%"
+
+		"pin_to_sibling"		"WaveCountLabel"
+		"pin_corner_to_sibling"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
-	
-	"ProgressBarBG"
-	{
-		"ControlName"			"ScalableImagePanel"
-		"fieldName"				"ProgressBarBG"
-		"xpos"					"c-96"
-		"ypos"					"21"
-		"zpos"					"2"
-		"wide"					"190"
-		"tall"					"1"
-		"visible"				"1"
-		"enabled"				"1"
-		"image"					"replay/thumbnails/whitetrans"
-		"fillcolor"				"180 180 180 255"
-		
-		"src_corner_height"		"22"				// pixels inside the image
-		"src_corner_width"		"22"
-	
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
-		
-		// MINMODE
-		"xpos_minmode"	"c-60"
-		"ypos_minmode"	"12"
-		"wide_minmode"	"154"
-	}
-	
+
 	"SeparatorBar"
 	{
 		"ControlName"	"Panel"
 		"fieldName"		"SeparatorBar"
 		"xpos"			"0"
-		"ypos"			"4"
+		"ypos"			"0"
 		"zpos"			"3"
 		"wide"			"1"
-		"tall"			"28"
+		"tall"			"30"
 		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
-		"PaintBackgroundType" "0"
-		"bgcolor_override"	"0 0 0 0"
-		"border"		"LightWhiteLeft"
-		
+		"PaintBackgroundType" "2"
+		"bgcolor_override"	"ahudWhite"
+
 		if_verbose
 		{
 			"visible"		"1"
 		}
 	}
-	
+
 	"SupportLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SupportLabel"
-		"font"			"HudFontSmallestBold"
-		"fgcolor"		"TanLight"
+		"font"			"aRegular11"
+		"fgcolor"		"ahudWhite"
 		"xpos"			"55"
-		"ypos"			"10"
+		"ypos"			"6"
 		"zpos"			"3"
 		"wide"			"60"
 		"tall"			"15"
@@ -155,10 +97,68 @@
 		"enabled"		"1"
 		"textAlignment"				"west"
 		"labelText"					"#TF_MVM_Support"
-		
+
 		if_verbose
 		{
 			"visible"		"1"
-		}		
+		}
+	}
+
+	"ProgressBar"
+	{
+		"ControlName"	"ScalableImagePanel"
+		"fieldName"		"ProgressBar"
+		"xpos"			"211"
+		"ypos"			"20"
+		"zpos"			"3"
+		"wide"			"178"
+		"tall"			"6"
+		"ypos_minmode"	"9"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"../HUD/tournament_panel_tan"
+
+		"src_corner_height"	"22"			// pixels inside the image
+		"src_corner_width"	"22"
+
+		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"
+	}
+
+	"NewProgressBarBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"NewProgressBarBG"
+		"xpos"			"211"
+		"ypos"			"20"
+		"zpos"			"-1"
+		"wide"			"179"
+		"tall"			"6"
+		"ypos_minmode"	"9"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"HudBlack"
+	}
+
+	"ProgressBarBG"
+	{
+		"ControlName"	"ScalableImagePanel"
+		"fieldName"		"ProgressBarBG"
+		"xpos"			"210"
+		"ypos"			"19"
+		"zpos"			"3"
+		"wide"			"180"
+		"tall"			"12"
+		"visible"		"0"
+		"enabled"		"0"
+		"image"			"../HUD/tournament_panel_tan"
+
+		"src_corner_height"	"22"			// pixels inside the image
+		"src_corner_width"	"22"
+
+		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"
 	}
 }

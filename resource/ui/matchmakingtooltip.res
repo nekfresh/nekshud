@@ -8,21 +8,31 @@
 		"ypos"			"0"
 		"zpos"			"30000"
 		"wide"			"300"
-		"tall"			"20"
+		"tall"			"100"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"EconItemBorder"
+		"border"		"MainMenuBGBorder"
 		"mouseinputenabled"	"0"
-		
+
 		"TipLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipLabel"
 
+			if_small
+			{
+				"font"	"FontStoreOriginalPrice"
+			}
 
-			
-			"font"	"product8"
-			
+			if_medium
+			{
+				"font"	"HudFontSmall"
+			}
+
+			if_large
+			{
+				"font"	"HudFontSmallBold"
+			}
 
 			"labelText"		"%tiptext%"
 			"textAlignment"	"center"
@@ -30,15 +40,15 @@
 			"ypos"			"10"
 			"zpos"			"2"
 			"wide"			"140"
-			"tall"			"20"
+			"tall"			"30"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"bgcolor"		"0 0 0 80"
+			"fgcolor_override"	"ahudWhite"
 			"auto_wide_tocontents" "1"
 			"auto_tall_tocontents"	"1"
 			"wrap"	"1"
 		}
-	}	
+	}
 }

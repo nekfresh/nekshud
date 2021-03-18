@@ -1,5 +1,17 @@
 "Resource/UI/econ/CyclingAdContainer.res"
 {
+	"ButtonContainer"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"ButtonContainer"
+		"xpos"		"0"
+		"ypos"		"0"
+		"zpos"		"2"
+		"wide"		"f0"
+		"tall"		"10"
+		"proportionaltoparent"	"1"
+	}
+
 	"PrevButton"
 	{
 		"ControlName"	"Button"
@@ -26,18 +38,12 @@
 		"actionsignallevel" "2"
 
 		"defaultBgColor_override"	"0 0 0 150"
-		"armedBgColor_override"		"Orange"
-
-		"armedFgColor_override"		"TanLight"
-
-		"sound_armed"		"ui/item_info_mouseover.wav"
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+		"armedBgColor_override"		"0 0 0 200"
 	}
 
 	"NextButton"
 	{
-		"ControlName"	"CEXImageButton"
+		"ControlName"	"Button"
 		"fieldName"		"NextButton"
 		"xpos"		"r8"
 		"ypos"		"cs-0.5"
@@ -61,14 +67,7 @@
 		"actionsignallevel" "2"
 
 		"defaultBgColor_override"	"0 0 0 150"
-		"armedBgColor_override"		"Orange"
-
-
-		"armedFgColor_override"		"TanLight"
-
-		"sound_armed"		"ui/item_info_mouseover.wav"
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+		"armedBgColor_override"		"0 0 0 200"
 	}
 
 	"AdsContainer"
@@ -86,20 +85,6 @@
 		"proportionaltoparent"	"1"
 	}
 
-	"Frame"
-	{
-		"Controlname"	"EditablePanel"
-		"fieldName"		"Frame"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
-		"zpos"			"5"
-		"proportionaltoparent"	"1"
-		"border"		"blank"
-		"mouseinputenabled"	"0"
-	}
-
 	"FadeTransition"
 	{
 		"ControlName"			"EditablePanel"
@@ -114,8 +99,8 @@
 		"scaleImage"			"1"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"		"0"
-		
-		"bgcolor_override"		"0 0 0 20"
+
+		"bgcolor_override"		"0 0 0 255"
 	}
 
 }

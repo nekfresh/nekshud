@@ -1,11 +1,9 @@
 #base "huditemeffectmeter.res"
 
-// Heavy / Medic MvM panels
-
-"Resource/UI/HudItemEffectMeter_Heavy.res"
+"Resource/UI/HudItemEffectMeter_Scout.res"
 {
-	HudItemEffectMeter
+	"HudItemEffectMeter"
 	{
-		"ypos"			"r123"
-	}	
+		"ypos"			"c113"
+	}
 }

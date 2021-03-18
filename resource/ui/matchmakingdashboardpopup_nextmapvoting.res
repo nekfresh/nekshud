@@ -29,7 +29,7 @@
 			"zpos"			"-2"
 			"wide"			"f0"
 			"tall"			"f0"
-			"visible"		"1"
+			"visible"		"0"
 			"PaintBackgroundType"	"0"
 			"border"		"OuterShadowBorder"
 			"proportionaltoparent"	"1"
@@ -48,11 +48,11 @@
 			"wide"			"f5"
 			"tall"			"f5"
 			"visible"		"1"
-			"PaintBackgroundType"	"2"
-			"border"		"ReplayDefaultBorder"
+			"PaintBackgroundType"	"0"
+			"border"		"ahudPanelBorder"
+			"bgcolor_override"	"ahudDarkGrey"
 			"proportionaltoparent"	"1"
 			"pinCorner"		"2"
-
 			"HideButton"
 			{
 				"ControlName"	"CExImageButton"
@@ -78,10 +78,10 @@
 				"Command"		"toggle_hide"
 				"proportionaltoparent" "1"
 				"actionsignallevel"	"2"
-			
+
 				"paintbackground"	"0"
 
-				"image_default"		"glyph_collapse"						
+				"image_default"		"glyph_collapse"
 
 				"image_drawcolor"	"235 226 202 255"
 				"image_armedcolor"	"200 80 60 255"
@@ -100,7 +100,7 @@
 					"image"			"glyph_store"
 					"scaleImage"	"1"
 					"proportionaltoparent" "1"
-				}				
+				}
 			} // HideButton
 
 			"ShowButton"
@@ -128,10 +128,10 @@
 				"Command"		"toggle_hide"
 				"proportionaltoparent" "1"
 				"actionsignallevel"	"2"
-			
+
 				"paintbackground"	"0"
 
-				"image_default"		"glyph_expand"						
+				"image_default"		"glyph_expand"
 
 				"image_drawcolor"	"235 226 202 255"
 				"image_armedcolor"	"200 80 60 255"
@@ -150,9 +150,8 @@
 					"image"			"glyph_store"
 					"scaleImage"	"1"
 					"proportionaltoparent" "1"
-				}				
+				}
 			} // HideButton
-
 
 			"DescLabel"
 			{

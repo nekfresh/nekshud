@@ -4,11 +4,11 @@
 {
 	"ItemNameLabel"
 	{
-		"labelText"		"#TF_Object_Dispenser"
+		"labelText"			"#TF_Object_Dispenser"
 	}
-	
-	"NumberLabel"
-	{	
-		"labelText"		"2"
+
+	"BuildingIcon"
+	{
+		"icon"				"obj_status_dispenser"
 	}
 }

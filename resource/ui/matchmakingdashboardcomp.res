@@ -19,16 +19,16 @@
 		"ControlName"		"Label"
 		"fieldName"		"Title"
 		"xpos"		"8"
-		"ypos"		"20"
+		"ypos"		"23"
 		"zpos"		"99"
 		"wide"		"f0"
 		"tall"		"20"
 		"proportionaltoparent"	"1"
 		"labeltext"		"#TF_Matchmaking_HeaderCompetitive"
 		"textAlignment"	"west"
-		"font"			"HudFontMediumBigBold"
-		"fgcolor_override"	"TanDark"
-		
+		"font"			"aBold24"
+		"fgcolor_override"	"ahudWhite"
+
 		"mouseinputenabled"	"0"
 	}
 
@@ -64,7 +64,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RankTooltipPanel"
 		"xpos"			"5"
-		"ypos"			"40"
+		"ypos"			"44"
 		"zpos"			"1000"
 		"wide"			"8"
 		"tall"			"8"
@@ -72,7 +72,7 @@
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"1"
 		"image"			"info"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"alpha"			"75"
 	}
 
@@ -100,7 +100,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"mouseinputenabled"	"1"
-		"eatmouseinput"	"0"	
+		"eatmouseinput"	"0"
 		"showtooltipswhenmousedisabled"	"1"
 		"proportionaltoparent" "1"
 	}

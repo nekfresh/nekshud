@@ -1,19 +1,18 @@
 "Resource/UI/HudMannVsMachineStatus.res"
-{	
+{
 	"WaveStatusPanel"
 	{
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
-		"xpos"				"0"
+		"xpos"				"c-300"
 		"ypos"				"0"
 		"zpos"				"0"
-		"wide"				"f0"
+		"wide"				"600"
 		"tall"				"67"
-		"ypos_minmode"		"0"
 		"visible"			"1"
 		"enabled"			"1"
 	}
-	
+
 	"WaveCompleteSummaryPanel"
 	{
 		"ControlName"		"CWaveCompleteSummaryPanel"
@@ -26,7 +25,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 	}
-	
+
 	"BossStatusPanel"
 	{
 		"ControlName"		"CMvMBossStatusPanel"
@@ -35,35 +34,35 @@
 		"ypos"				"0"
 		"zpos"				"0"
 		"wide"				"200"
-		"tall"				"120"
+		"tall"				"100"
 		"visible"			"1"
 		"enabled"			"1"
-		
+
 		"pin_to_sibling"               "WaveStatusPanel"
-		"pin_corner_to_sibling"        "4"          
-		"pin_to_sibling_corner"        "6"  
+		"pin_corner_to_sibling"        "4"
+		"pin_to_sibling_corner"        "6"
 	}
 
 	"CurrencyStatusPanel"
 	{
 		"ControlName"		"CCurrencyStatusPanel"
 		"fieldName"			"CurrencyStatusPanel"
-		"xpos"				"0"
-		"ypos"				"0"
-		"wide"				"f0"
-		"tall"				"f0"
+		"xpos"				"c-202"
+		"ypos"				"r56"
+		"wide"				"100"
+		"tall"				"16"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}
-	
+
 	"InWorldCurrencyPanel"
 	{
 		"ControlName"		"CInWorldCurrencyStatus"
 		"fieldName"			"InWorldCurrencyPanel"
-		"xpos"				"0"
-		"ypos"				"0"
-		"wide"				"f0"
-		"tall"				"f0"
+		"xpos"				"c-202"
+		"ypos"				"r42"
+		"wide"				"100"
+		"tall"				"16"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}
@@ -81,9 +80,9 @@
 		"enabled"		"1"
 		"image"			"../sprites/obj_icons/warning_highlight"
 		"scaleImage"	"1"
-		"time"			"0.3"		
+		"time"			"0.3"
 	}
-	
+
 	"UpgradeLevelContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -93,7 +92,7 @@
 		"wide"			"640"
 		"tall"			"480"
 		"visible"		"0"
-					
+
 		"UpgradeProgressTrack"
 		{
 			"ControlName"	"CMvMBombCarrierProgress"
@@ -102,10 +101,10 @@
 			"ypos"			"r35"
 			"wide"			"640"
 			"tall"			"480"
-			"visible"		"1"	
+			"visible"		"1"
 		}
-		
-		"UpgradeLevel1" 
+
+		"UpgradeLevel1"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevel1"
@@ -121,8 +120,8 @@
 			"image"			"../hud/hud_mvm_bomb_upgrade_1_disabled"
 			"scaleImage"	"1"
 		}
-		
-		"UpgradeLevel2" 
+
+		"UpgradeLevel2"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevel2"
@@ -138,8 +137,8 @@
 			"image"			"../hud/hud_mvm_bomb_upgrade_2_disabled"
 			"scaleImage"	"1"
 		}
-		
-		"UpgradeLevel3" 
+
+		"UpgradeLevel3"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevel3"
@@ -156,7 +155,7 @@
 			"scaleImage"	"1"
 		}
 
-		"UpgradeLevelBoss" 
+		"UpgradeLevelBoss"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevelBoss"
@@ -173,20 +172,19 @@
 			"scaleImage"	"1"
 		}
 	}
-	
+
 	"VictorySplash"
 	{
 		"ControlName"		"CVictorySplash"
 		"fieldName"			"VictorySplash"
 		"xpos"				"0"
 		"ypos"				"0"
-		//"zpos"				"102"
 		"wide"				"f0"
 		"tall"				"480"
 		"visible"			"0"
-		"enabled"			"1"			
+		"enabled"			"1"
 	}
-	
+
 	"VictoryPanelContainer"
 	{
 		"ControlName"	"CMvMVictoryPanelContainer"
@@ -197,7 +195,7 @@
 		"tall"			"480"
 		"visible"		"0"
 	}
-	
+
 	"WaveLossPanel"
 	{
 		"ControlName"	"CMvMWaveLossPanel"
@@ -208,7 +206,7 @@
 		"tall"			"480"
 		"visible"		"0"
 	}
-	
+
 	"ServerChangeMessage"
 	{
 		"ControlName"	"EditablePanel"
@@ -218,28 +216,24 @@
 		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"0"
-		
+
 		"Background"
 		{
-			"ControlName"		"ScalableImagePanel"
+			"ControlName"		"EditablePanel"
 			"fieldName"		"Background"
 			"xpos"			"c-150"
-			"ypos"			"400"
+			"ypos"			"390"
 			"wide"			"300"
-			"tall"			"20"
+			"tall"			"21"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"../hud/color_panel_red"
+			"border"		"ahudDarkRedTeamBorder"
+			"bgcolor_override"	"ahudRed"
 
-			"src_corner_height"	"22"				// pixels inside the image
-			"src_corner_width"	"22"
-		
-			"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
 		}
-	
+
 		"ServerChangeLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -248,13 +242,12 @@
 			"textAlignment"	"center"
 			"labelText"		"%servermessage%"
 			"xpos"			"c-150"
-			"ypos"			"400"
+			"ypos"			"390"
 			"wide"			"300"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"tanlight"		
+			"fgcolor"		"ahudWhite"
 		}
 	}
-	
 }

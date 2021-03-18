@@ -1,89 +1,27 @@
 "Resource/UI/build_menu/base_unavailable.res"
 {
-	"NumberLabel"
-	{	
+	"ItemNameLabel"
+	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"NumberLabel"
-		"font"			"product8"
-		"fgcolor"		"0 0 0 240"
+		"fieldName"		"ItemNameLabel"
+		"font"			"aRegular11"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"4"
 		"zpos"			"1"
-		"wide"			"16"
-		"tall"			"16"
+		"wide"			"55"
+		"tall"			"15"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"1"
-		"textAlignment"	"Center"
-		"dulltext"		"1"
-		"brighttext"	"0"	
-		
-		"fgcolor_override"	"0 0 0 240"
-		"bgcolor_override"	"0 0 0 165"
-	}
-	
-	"CantBuildReason"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"CantBuildReason"
-		"font"			"Default"
-		"xpos"			"2"
-		"ypos"			"0"
-		"zpos"			"2"
-		"wide"			"98"
-		"tall"			"16"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"#Hud_Menu_Build_Unavailable"
-		"textAlignment"	"west"
+		"labelText"		"#TF_Object_Sentry"
+		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		
-		"fgcolor_override"	"0 0 0 240"
-		"bgcolor_override"	"0 0 0 165"
-		"textinsetx"		"12"
-		
-		"pin_to_sibling" 		"NumberLabel"
-		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
+		"fgcolor"		"200 10 20 255"
 	}
-	
-	"ItemNameLabel"
-	{	
-		"ControlName"		"CExLabel"
-		"fieldName"			"ItemNameLabel"
-		"font"				"product8"
-		"xpos"				"2"
-		"ypos"				"0"
-		"zpos"				"1"
-		"wide"				"98"
-		"tall"				"16"
-		"autoResize"		"0"
-		"pinCorner"			"0"
-		"visible"			"0"
-		"enabled"			"1"
-		"labelText"			"#TF_Object_Sentry"
-		"labelText_lodef"	"#TF_Object_Sentry_360"
-		"textAlignment"		"west"
-		"dulltext"			"0"
-		"brighttext"		"0"
-		
-		"fgcolor_override"	"245 245 245 160"
-		"bgcolor_override"	"0 0 0 165"
-		"textinsetx"		"12"
-		
-		"pin_to_sibling" 		"NumberLabel"
-		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
-	}
-	
-	
-	
-	"ItemBackground"	
+
+	"ItemBackground"
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"ItemBackground"
@@ -93,14 +31,35 @@
 		"wide"			"98"
 		"tall"			"105"
 		"visible"		"0"
+		"enabled"		"0"
+		"scaleImage"	"1"
+		"icon"			"hud_menu_item_bg"
+		"iconColor"		"ProgressOffWhite"
+	}
+
+	"CantBuildReason"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CantBuildReason"
+		"font"			"aRegular8"
+		"fgcolor"		"200 10 20 255"
+		"xpos"			"0"
+		"ypos"			"30"
+		"zpos"			"2"
+		"wide"			"55"
+		"tall"			"18"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
-		"icon"			"hud_menu_item_bg_outline"
-		"iconColor"		"ProgressOffWhiteTransparent"
+		"labelText"		"#Hud_Menu_Build_Unavailable"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
 	}
 
 	"ModeLabel"
-	{	
+	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ModeLabel"
 		"font"			"DefaultSmall"
@@ -112,13 +71,13 @@
 		"tall"			"13"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		""
-		"textAlignment"	"East"	
+		"textAlignment"	"East"
 	}
-		
-	"NumberBg"	
+
+	"NumberBg"
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"NumberBg"
@@ -128,9 +87,30 @@
 		"wide"			"18"
 		"tall"			"18"
 		"visible"		"0"
-		"enabled"		"1"
-		"scaleImage"	"1"	
+		"enabled"		"0"
+		"scaleImage"	"1"
 		"icon"			"ico_key_blank"
 		"iconColor"		"255 255 255 255"
+	}
+
+	"NumberLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"NumberLabel"
+		"font"			"aRegular11"
+		"fgcolor"		"255 255 255 255"
+		"xpos"			"25"
+		"ypos"			"58"
+		"zpos"			"1"
+		"wide"			"7"
+		"tall"			"7"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		"1"
+		"textAlignment"	"center"
+		"dulltext"		"1"
+		"brighttext"	"0"
 	}
 }

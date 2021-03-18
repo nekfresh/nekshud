@@ -1,26 +1,21 @@
-#base "heavy_blue.res"
+#base "heavy_red.res"
 
-"Resource/UI/disguise_menu/heavy_red.res"
+"Resource/UI/disguise_menu/sniper_blue.res"
 {
 	"ItemNameLabel"
 	{
 		"labelText"		"#TF_Class_Name_Sniper"
+		"fgcolor"		"153 194 216 255"
 	}
 
-	"ClassIcon"	
-	{
-		"icon"			"hud_menu_sniper_blu"
-	}
-	
 	"NewNumberLabel"
 	{
-		"labelText"		"2"
-		"bgcolor_override"	"softblue200"
+		"fgcolor"		"153 194 216 255"
 	}
-	
+
 	"NumberLabel"
-	{		
+	{
+		"fgcolor"		"153 194 216 255"
 		"labelText"		"8"
-		"bgcolor_override"	"softblue200"
 	}
 }

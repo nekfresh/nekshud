@@ -4,11 +4,11 @@
 {
 	"ItemNameLabel"
 	{
-		"labelText"		"#TF_Object_Sentry"
+		"labelText"			"#TF_Object_Sentry"
 	}
-	
-	"NumberLabel"
-	{	
-		"labelText"		"1"
+
+	"BuildingIcon"
+	{
+		"icon"				"obj_status_sentrygun_1"
 	}
 }

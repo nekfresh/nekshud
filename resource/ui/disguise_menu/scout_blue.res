@@ -1,26 +1,22 @@
-#base "heavy_blue.res"
+#base "heavy_red.res"
 
-"Resource/UI/disguise_menu/heavy_red.res"
+"Resource/UI/disguise_menu/scout_blue.res"
 {
 	"ItemNameLabel"
 	{
 		"labelText"		"#TF_Class_Name_Scout"
+		"fgcolor"		"153 194 216 255"
 	}
 
-	"ClassIcon"	
-	{
-		"icon"			"hud_menu_scout_blu"
-	}
-	
 	"NewNumberLabel"
 	{
+		"fgcolor"		"153 194 216 255"
 		"labelText"		"1"
-		"bgcolor_override"	"softblue200"
 	}
-	
+
 	"NumberLabel"
-	{		
+	{
+		"fgcolor"		"153 194 216 255"
 		"labelText"		"1"
-		"bgcolor_override"	"softblue200"
 	}
 }

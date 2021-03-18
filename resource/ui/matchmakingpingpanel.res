@@ -27,8 +27,9 @@
 		"wide"			"f0"
 		"tall"			"f-50"
 		"visible"		"1"
-		"PaintBackgroundType"	"2"
-		"border"		"noborder"
+		"PaintBackgroundType"	"0"
+		"border"		"ahudPanelBorder"
+		"bgcolor_override"	"ahudDarkGrey"
 		"proportionaltoparent"	"1"
 	}
 
@@ -44,9 +45,9 @@
 		"proportionaltoparent"	"1"
 		"labeltext"		"#TF_MM_OpenSettings"
 		"textAlignment"	"west"
-		"font"			"HudFontMediumBold"
-		"fgcolor_override"	"TanDark"
-		
+		"font"			"aBold24"
+		"fgcolor_override"	"ahudWhite"
+
 		"mouseinputenabled"	"0"
 	}
 
@@ -64,9 +65,9 @@
 		"textAlignment"	"west"
 		"font"			"HudFontSmallestBold"
 		"smallcheckimage"	"1"
-		"fgcolor_override"	"TanDark"
+		"fgcolor_override"	"ahudDullWhite"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 	}
 
@@ -84,12 +85,12 @@
 		"keyboardinputenabled"	"0"
 
 		"editable"		"0"
-		"bgcolor_override"	"0 0 0 255"
-		"fgcolor_override"	"235 226 202 255"
-		"disabledFgColor_override" "235 226 202 255"
+		"bgcolor_override"	"ahudBlack"
+		"fgcolor_override"	"ahudWhite"
+		"disabledFgColor_override" "ahudWhite"
 		"disabledBgColor_override" "0 0 0 0"
 		"selectionColor_override" "0 0 0 0"
-		"selectionTextColor_override" "235 226 202 255"
+		"selectionTextColor_override" "ahudWhite"
 		"defaultSelectionBG2Color_override" "0 0 0 0"
 	}
 
@@ -108,7 +109,7 @@
 		"font"			"HudFontSmallestBold"
 		"smallcheckimage"	"1"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 
 		"cvar_name" "tf_party_ignore_invites"
@@ -130,7 +131,7 @@
 		"smallcheckimage"	"1"
 		"enabled"	"0"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 	}
 
@@ -149,7 +150,7 @@
 		"font"			"HudFontSmallestBold"
 		"smallcheckimage"	"1"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 		"fgcolor_override"		"TanDark"
 	}
@@ -170,7 +171,7 @@
 		"smallcheckimage"	"1"
 		"actionsignallevel"	"1"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 
 		"cvar_name"	"tf_mm_custom_ping_enabled"
@@ -193,7 +194,7 @@
 		"font"			"HudFontSmallestBold"
 		"smallcheckimage"	"1"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 	}
 
@@ -211,9 +212,9 @@
 		"textAlignment"	"north-west"
 		"font"			"HudFontSmallest"
 		"wrap"		"1"
-		"fgcolor"		"117 107 94 255"
+		"fgcolor"		"ahudDullWhite"
 
-		"sound_depressed"	"UI/buttonclickrelease.wav"	
+		"sound_depressed"	"UI/buttonclickrelease.wav"
 		"button_activation_type"	"1"
 	}
 
@@ -230,7 +231,7 @@
 		"labeltext"		""
 		"textAlignment"	"west"
 		"font"			"HudFontSmallestBold"
-		
+
 		"mouseinputenabled"	"0"
 	}
 
@@ -301,14 +302,14 @@
 				{
 					"fgcolor_override"	"TanDark"
 				}
-		
+
 				"UpButton"
 				{
 					"ControlName"	"Button"
 					"FieldName"		"UpButton"
 					"visible"		"0"
 				}
-		
+
 				"DownButton"
 				{
 					"ControlName"	"Button"
@@ -328,10 +329,10 @@
 			"tall"			"f0"
 			"zpos"			"5"
 			"proportionaltoparent"	"1"
-			"border"		"InnerShadowBorder"
+			"border"		"NoBorder"
 			"mouseinputenabled"	"0"
 		}
-			
+
 		"Background"
 		{
 			"ControlName"	"EditablePanel"
@@ -346,7 +347,8 @@
 			"proportionaltoparent"	"1"
 
 			"paintborder"	"1"
-			"border"		"ReplayDefaultBorder"
+			"border"		"NoBorder"
+			"bgcolor_override"	"ahudBlack"
 		}
 	}
 }

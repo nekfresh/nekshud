@@ -1,14 +1,14 @@
-"Resource/UI/SpectatorGUIHealth.res"
+"Resource/UI/FreezePanelKillerHealth.res"
 {
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"226"
-		"ypos"			"2"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"4"
-		"wide"			"16"
-		"tall"			"16"
+		"wide"			"18"
+		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"
@@ -17,11 +17,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"224"
-		"ypos"			"0"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"3"
-		"wide"			"20"
-		"tall"			"20"
+		"wide"			"22"
+		"tall"			"22"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/health_bg"
@@ -30,111 +30,83 @@
 	"BuildingStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"BuildingStatusHealthImageBG"
+		"fieldName"		"PlayerStatusHealthImageBG"
 		"xpos"			"9999"
-	}
-	"PlayerStatusHealthValueMain"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"PlayerStatusHealthValueMain"
-		"xpos"			"0"//-9
-		"ypos"			"0"//11
-		"zpos"			"28"
-		"wide"			"200"
-		"tall"			"42"
+		"ypos"			"9999"
+		"zpos"			"3"
+		"wide"			"28"
+		"tall"			"28"
 		"visible"		"1"
 		"enabled"		"1"
-		"labeltext"		"%Health%"
-		"textAlignment"		"center"
-		"font"			"ProductBold40"//"DefaultVerySmall"
-		"fgcolor_override"		"tanlight"
-	}
-	"PlayerStatusHealthValueMainS"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"PlayerStatusHealthValueMainS"
-		"xpos"			"1"//-9
-		"ypos"			"1"//11
-		"zpos"			"20"
-		"wide"			"200"
-		"tall"			"42"
-		"visible"		"1"
-		"enabled"		"1"
-		"labeltext"		"%Health%"
-		"textAlignment"		"center"
-		"font"			"ProductBold40blur"//"DefaultVerySmall"
-		"fgcolor_override"		"0 0 0 120"
-	}
-
-
-	
-	
-	"PlayerStatusHealthBonusImage"
-	{
-		"ControlName"	"ScaleableImagePanel"
-		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"9999"
-		"ypos"			"0"
-		"zpos"			"14"
-		"wide"			"0"
-		"tall"			"19"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/white"
-		"border"			"blurborder"
+		"image"			"../hud/health_equip_bg"
 		"scaleImage"	"1"
 	}
-
-	"NORMBG"
+	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"NORMBG"
+		"fieldName"		"PlayerStatusHealthBonusImage"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"3"
+		"wide"			"22"
+		"tall"			"22"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"../hud/health_over_bg"
+		"scaleImage"	"1"
+	}
+	"PlayerStatusHealthValueFreezePanel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueFreezePanel"
 		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"1"
-		"wide"			"0"
-		"alpha"			"255"
+		"ypos"			"4"
+		"zpos"			"5"
+		"wide"			"44"
 		"tall"			"22"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"			"180 180 180 0"
-		"border"			"blurborder"
-		"scaleImage"	"1"
-
+		"textAlignment"	"center"
+		"font"			"aRegular24"
+		"fgcolor"		"HP"
+		"labeltext"		"%Health%"
 	}
-
-	"BuffBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BuffBG"
-		"xpos"			"0"
-		"ypos"			"17"
-		"zpos"			"14"
-		"wide"			"0"
-		"alpha"			"0"
-		"tall"			"17"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"			"47 185 123 255"
-		"scaleImage"	"1"
-	}
-	
-
-	"PlayerStatusPlayerLevel"
+	"PlayerStatusHealthValueFreezePanelShadow"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusPlayerLevel"
-		"xpos"			"8"
-		"xpos_minmode"	"0"
-		"ypos"			"9"	[$WIN32]
-		"ypos"			"0"	[$X360]
+		"fieldName"		"PlayerStatusHealthValueFreezePanelShadow"
+		"xpos"			"-1"
+		"ypos"			"-1"
 		"zpos"			"5"
-		"wide"			"16"
-		"tall"			"12"
-		"visible"		"0"
+		"wide"			"44"
+		"tall"			"22"
+		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"font"			"ScoreboardVerySmall"
-		"fgcolor"		"TFOrange"
+		"font"			"aRegular24"
+		"fgcolor"		"ShadowBlack"
+		"labeltext"		"%Health%"
+
+		"pin_to_sibling"	"PlayerStatusHealthValueFreezePanel"
+		"pin_corner_to_sibling"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
+	}
+	"HealthBoxBG"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"HealthBoxBG"
+		"xpos"			"0"
+		"ypos"			"-5"
+		"zpos"			"1"
+		"wide"			"44"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"	"Blank"
+		"PaintBackgroundType"	"0"
+
+		"pin_to_sibling"	"PlayerStatusHealthValueFreezePanel"
+		"pin_corner_to_sibling"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 }

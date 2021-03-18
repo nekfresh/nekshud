@@ -1,5 +1,5 @@
 "Resource/UI/ObjectiveStatusMultipleEscort.res"
-{	
+{
 	"ObjectiveStatusMultipleEscort"
 	{
 		"ControlName"		"EditablePanel"
@@ -11,22 +11,24 @@
 		"visible"			"1"
 		"enabled"			"1"
 	}
-	
+
 	"BlueEscortPanel"
 	{
 		"ControlName"		"CTFHudEscort"
 		"fieldName"			"BlueEscortPanel"
-		"xpos"				"c-78"
-		"ypos"				"r30"
+		"xpos"				"c-145"
+		"ypos"				"r160"
 		"zpos"				"1"
-		"wide"				"162"
-		"tall"				"10"
+		"wide"				"400"
+		"tall"				"200"
 		"visible"			"1"
 		"enabled"			"1"
-		
+		"progress_xpos"		"79"
+		"progress_wide"		"270"
+
 		"if_blue_is_top"
 		{
-			"ypos"				"r30"
+			"ypos"				"r176"
 		}
 	}
 
@@ -34,17 +36,19 @@
 	{
 		"ControlName"		"CTFHudEscort"
 		"fieldName"			"RedEscortPanel"
-		"xpos"				"c-78"
-		"ypos"				"r16"
+		"xpos"				"c-145"
+		"ypos"				"r160"
 		"zpos"				"1"
-		"wide"				"162"
-		"tall"				"10"
+		"wide"				"400"
+		"tall"				"200"
 		"visible"			"1"
 		"enabled"			"1"
-		
+		"progress_xpos"		"79"
+		"progress_wide"		"270"
+
 		"if_red_is_top"
 		{
-			"ypos"				"r16"
+			"ypos"				"r176"
 		}
 	}
 }

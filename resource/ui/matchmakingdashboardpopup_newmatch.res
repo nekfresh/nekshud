@@ -49,7 +49,8 @@
 			"tall"			"f5"
 			"visible"		"1"
 			"PaintBackgroundType"	"2"
-			"border"		"ReplayDefaultBorder"
+			"border"		"ahudPanelBorder"
+			"bgcolor_override"	"ahudDarkGrey"
 			"proportionaltoparent"	"1"
 			"pinCorner"		"3"
 
@@ -65,7 +66,7 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"font"			"HudFontSmallBold"
-				"fgcolor_override"	"TanLight"
+				"fgcolor_override"	"ahudWhite"
 				"textAlignment"	"center"
 				"labelText"		"%match_type%"
 				"proportionaltoparent"	"1"
@@ -91,7 +92,7 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"font"			"HudFontSmallest"
-				"fgcolor_override"	"TanLight"
+				"fgcolor_override"	"ahudWhite"
 				"textAlignment"	"center"
 				"labelText"		"%auto_join%"
 				"proportionaltoparent"	"1"
@@ -144,7 +145,7 @@
 					"xpos"			"cs-0.5"
 					"wide"			"150"
 				}
-				
+
 				"autoResize"	"0"
 				"pinCorner"		"3"
 				"visible"		"1"
@@ -177,7 +178,7 @@
 				"wide"			"150"
 				"zpos"			"100"
 				"tall"			"15"
-				
+
 				"autoResize"	"0"
 				"pinCorner"		"3"
 				"visible"		"1"
@@ -213,7 +214,7 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"font"			"HudFontSmallest"
-				"fgcolor_override"	"TanLight"
+				"fgcolor_override"	"ahudWhite"
 				"textAlignment"	"east"
 				"labelText"		"#TF_Matchmaking_RollingQueue_MatchReadyJoining"
 				"proportionaltoparent"	"1"

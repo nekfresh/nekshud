@@ -7,12 +7,12 @@
 		"xpos"		"0"
 		"ypos"		"0"
 		"zpos"		"2"
-		"wide"		"20"
-		"tall"		"20"
+		"wide"		"27"
+		"tall"		"27"
 		"visible"	"1"
 		"enabled"	"1"
 	}
-	
+
 	"Countdown"
 	{
 		"ControlName"	"CControlPointCountdown"
@@ -20,55 +20,37 @@
 		"xpos"		"0"
 		"ypos"		"0"
 		"zpos"		"4"
-		"wide"		"20"
-		"tall"		"20"
+		"wide"		"27"
+		"tall"		"27"
 		"visible"	"1"
 		"enabled"	"1"
-	}	
+	}
 
 	"CapPlayerImage"
 	{
-		"ControlName"	"ImagePanel"		
+		"ControlName"	"ImagePanel"
 		"fieldName"	"CapPlayerImage"
 		"xpos"		"0"
 		"ypos"		"0"
 		"zpos"		"3"
-		"wide"		"7"
-		"tall"		"14"
+		"wide"		"8"
+		"tall"		"16"
 		"visible"	"0"
 		"enabled"	"1"
-		"image"			"replay/thumbnails/captureicon"
-		"scaleImage"	"1"
-	}
-	"Background"
-	{
-		"ControlName"	"ImagePanel"		
-		"fieldName"	"Background"
-		"xpos"		"0"
-		"ypos"		"0"
-		"zpos"		"-5"
-		"wide"		"0"
-		"tall"		"400"
-		"visible"	"1"
-		"enabled"	"1"
-		"image"		"replay/thumbnails/hp/REFRACTblurclear"
+		"image"		"capture_icon"
 		"scaleImage"	"1"
 	}
 
 	"CapNumPlayers"
-	{	
+	{
 		"ControlName"		"Label"
 		"fieldName"		"CapNumPlayers"
-		"font"			"productbold12"
-		"fgcolor"			"tanlight"
-		"fgcolor_override"			"tanlight"
-		"defaultfgcolor"			"tanlight"
-		"defaultfgcolor_override"			"tanlight"
-		"xpos"			"8"
-		"ypos"			"0"
+		"font"			"aRegular12"
+		"xpos"			"12"
+		"ypos"			"2"
 		"zpos"			"4"
-		"wide"			"22"
-		"TALL"			"22"
+		"wide"			"12"
+		"tall"			"24"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -81,19 +63,19 @@
 
 	"OverlayImage"
 	{
-		"ControlName"	"ImagePanel"		
+		"ControlName"	"ImagePanel"
 		"fieldName"	"OverlayImage"
-		"xpos"		"0"
+		"xpos"		"17"
 		"ypos"		"0"
 		"zpos"		"4"
-		"wide"		"0"
-		"tall"		"0"
+		"wide"		"10"
+		"tall"		"10"
 		"visible"	"0"
 		"enabled"	"1"
 		"image"		"capture_icon"
 		"scaleImage"	"1"
 	}
-	
+
 	"CPTimerLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -102,7 +84,6 @@
 		"ypos"			"0"
 		"zpos"			"0"
 		"wide"			"9"
-		"wide_minmode"			"7"
 		"tall"			"20"
 		"visible"		"0"
 		"enabled"		"1"
@@ -112,9 +93,8 @@
 		"brighttext"	"0"
 		"wrap"			"0"
 		"font"			"ControlPointTimer"
-		"font_minmode"	"ControlPointTimerSmaller"
 	}
-				
+
 	"CPTimerBG"
 	{
 		"ControlName"	"Panel"
@@ -122,13 +102,11 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"		"66"
-		"wide_minmode"		"42"
-		"tall"		"33"
-		"tall_minmode"		"21"
+		"wide"		"60"
+		"tall"		"30"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../sprites/obj_icons/icon_obj_timer"	
-		"scaleImage"	"1"	
+		"image"			"../sprites/obj_icons/icon_obj_timer"
+		"scaleImage"	"1"
 	}
 }

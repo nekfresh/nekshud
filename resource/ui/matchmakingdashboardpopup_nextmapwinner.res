@@ -29,7 +29,7 @@
 			"zpos"			"-2"
 			"wide"			"f0"
 			"tall"			"f0"
-			"visible"		"1"
+			"visible"		"0"
 			"PaintBackgroundType"	"0"
 			"border"		"OuterShadowBorder"
 			"proportionaltoparent"	"1"
@@ -48,8 +48,9 @@
 			"wide"			"f5"
 			"tall"			"f5"
 			"visible"		"1"
-			"PaintBackgroundType"	"2"
-			"border"		"ReplayDefaultBorder"
+			"PaintBackgroundType"	"0"
+			"border"		"ahudPanelBorder"
+			"bgcolor_override"	"ahudDarkGrey"
 			"proportionaltoparent"	"1"
 			"pinCorner"		"2"
 
@@ -80,7 +81,7 @@
 				"wide"			"50"
 				"tall"			"o0.75"
 				"zpos"			"1"
-				"proportionaltoparent"	"1"	
+				"proportionaltoparent"	"1"
 				"mouseinputenabled"	"0"
 
 				"MapImage"
@@ -93,7 +94,7 @@
 					"tall"			"o1"
 					"zpos"			"0"
 					"image"			"..\vgui\maps\menu_thumb_pl_goldrush"
-					"proportionaltoparent"	"1"	
+					"proportionaltoparent"	"1"
 					"mouseinputenabled"	"0"
 				}
 			}

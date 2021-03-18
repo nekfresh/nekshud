@@ -4,11 +4,11 @@
 {
 	"ItemNameLabel"
 	{
-		"labelText"		"#TF_Object_Tele_Entrance_360"
+		"labelText"			"#TF_Object_Tele_Entrance_360"
 	}
-	
-	"NumberLabel"
-	{	
-		"labelText"		"3"
+
+	"BuildingIcon"
+	{
+		"icon"				"obj_status_tele_entrance"
 	}
 }

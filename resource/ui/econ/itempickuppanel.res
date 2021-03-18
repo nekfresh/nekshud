@@ -16,34 +16,33 @@
 		"tabPosition"		"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"CollyHudDarkGray"
-		"infocus_bgcolor_override" "CollyHudDarkGray"
-		"outoffocus_bgcolor_override" "CollyHudDarkGray"
-		
+		"bgcolor_override"	"ahudDarkGrey"
+		"infocus_bgcolor_override" "ahudDarkGrey"
+		"outoffocus_bgcolor_override" "ahudDarkGrey"
+
 		"modelpanels_spacing"		"40"
 		"modelpanels_width"			"500"
 		"modelpanels_height"		"260"
 		"modelpanels_ypos"			"110"
-		
-		
-		"modelpanelskv"	
+
+		"modelpanelskv"
 		{
-			"PaintBackgroundType"	"2"
+			"PaintBackgroundType"	"0"
 			"paintborder"			"1"
-			"bgcolor_override"		"0 0 0 0"
-			
+			"bgcolor_override"		"ahudGrey"
+
 			"model_xpos"	"0"
 			"model_center_y"	"1"
 			"model_tall"	"160"
 			"model_wide"	"240"
-			
+
 			"text_forcesize"	"1"
 			"text_xpos"		"250"
 			"text_wide"		"225"
 			"text_center"	"1"
-			"is_mouseover"		"1"
-			"hide_collection_panel" "1"
-			
+			"is_mouseover"	"1"
+			"hide_collection_panel"	"1"
+
 			"itemmodelpanel"
 			{
 				"use_item_rendertarget" "0"
@@ -51,7 +50,7 @@
 			}
 		}
 	}
-	
+
 	"classimageoutline"
 	{
 		"ControlName"	"EditablePanel"
@@ -62,9 +61,9 @@
 		"wide"			"36"
 		"tall"			"36"
 		"visible"		"1"
-		"bgcolor_override" "0 0 0 0"
+		"bgcolor_override" "0 0 0 255"
 	}
-	
+
 	"classimage"
 	{
 		"ControlName"	"ImagePanel"
@@ -79,7 +78,7 @@
 		"image"			"achievements/tf_medic_heal_grind"
 		"scaleImage"	"1"
 	}
-	
+
 	"ItemsFoundLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -97,7 +96,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}
-	
+
 	"SelectedItemFoundMethodLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -115,7 +114,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}
-	
+
 	"ItemCountLabel"
 	{
 		"ControlName"		"CExLabel"
@@ -150,16 +149,16 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}
-	
+
 	"NextButton"
 	{
 		"ControlName"		"CExButton"
 		"fieldName"		"NextButton"
 		"xpos"			"c195"
-		"ypos"			"350"
+		"ypos"			"355"
 		"zpos"			"1"
 		"wide"			"70"
-		"tall"			"30"
+		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -179,10 +178,10 @@
 		"ControlName"		"CExButton"
 		"fieldName"		"PrevButton"
 		"xpos"			"c-265"
-		"ypos"			"350"
+		"ypos"			"355"
 		"zpos"			"1"
 		"wide"			"70"
-		"tall"			"30"
+		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -197,7 +196,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
-	
+
 	"CloseButton"
 	{
 		"ControlName"	"CExButton"
@@ -206,7 +205,7 @@
 		"ypos"			"420"
 		"zpos"			"6"
 		"wide"			"250"
-		"tall"			"30"
+		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -230,7 +229,7 @@
 		"ypos"			"420"
 		"zpos"			"6"
 		"wide"			"250"
-		"tall"			"30"
+		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -245,7 +244,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
-	
+
 	"DiscardButton"
 	{
 		"ControlName"	"CExImageButton"
@@ -272,10 +271,10 @@
 		"defaultBgColor_override" "117 107 94 255"
 		"armedBgColor_override" "145 73 59 255"
 		"depressedBgColor_override" "117 107 94 255"
-			
-		"image_drawcolor"	"235 226 202 255"		
-		"image_armedcolor"	"235 226 202 255"		
-		
+
+		"image_drawcolor"	"ahudWhite"
+		"image_armedcolor"	"ahudWhite"
+
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -291,8 +290,8 @@
 			"scaleImage"	"1"
 			"paintbackgroundtype" "0"
 			"proportionaltoparent"	"1"
-		}				
-	}		
+		}
+	}
 	"DiscardButtonTooltip"
 	{
 		"ControlName"	"EditablePanel"
@@ -304,8 +303,10 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
-		
+		"paintbackground"	"1"
+		"border"		""
+		"bgcolor_override"	"ahudDarkerGrey"
+
 		"TipLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -321,7 +322,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"ahudWhite"
 			"wrap"			"1"
 			"centerwrap"	"1"
 		}
@@ -343,9 +344,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"fgcolor_override" "200 80 60 255"
-		"bgcolor_override"	"CollyHudDarkGray"
+		"bgcolor_override"	"46 43 42 255"
 	}
-	
+
 	"ScoreEntry"
 	{
 		"ControlName"		"TextEntry"
@@ -365,7 +366,7 @@
 		"NumericInputOnly"	"0"
 		"unicode"			"0"
 		"wrap"				"0"
-		"fgcolor_override"	"235 226 202 255"
+		"fgcolor_override"	"ahudWhite"
 		"bgcolor_override"	"0 0 0 255"
 		"labelText"			"Enter Score Here"
 		"textAlignment"		"center"

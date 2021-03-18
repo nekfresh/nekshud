@@ -4,11 +4,6 @@
 {
 	"ItemNameLabel"
 	{
-		"labelText"		"#TF_Object_Sentry"
-	}
-	
-	"NumberLabel"
-	{	
-		"labelText"		"1"
+		"labelText"			"#TF_Object_Sentry"
 	}
 }

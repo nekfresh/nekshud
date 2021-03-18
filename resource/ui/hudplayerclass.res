@@ -1,6 +1,6 @@
 "Resource/UI/HudPlayerClass.res"
 {
-	// Player Class Data
+	// player class data
 	"HudPlayerClass"
 	{
 		"ControlName"	"EditablePanel"
@@ -13,12 +13,11 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}
-	
 	"PlayerStatusClassImage"
 	{
 		"ControlName"	"CTFClassImage"
 		"fieldName"		"PlayerStatusClassImage"
-		"xpos"			"25"
+		"xpos"			"9999"
 		"ypos"			"r75"
 		"zpos"			"2"
 		"wide"			"75"
@@ -38,13 +37,13 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyOutlineImage"
-		"xpos"			"3"
-		"ypos"			"r67"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"7"
 		"wide"			"55"
 		"tall"			"55"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../hud/class_spy_outline"
 		"scaleImage"	"1"
 	}
@@ -81,17 +80,17 @@
 
 		"model"
 		{
-			"force_pos"		"1"
-			"angles_x" 		"0"
-			"angles_y" 		"172"
-			"angles_z" 		"0"
-			"origin_x" 		"200"
-			"origin_y" 		"0"
-			"origin_z" 		"-60"
-			"frame_origin_x" "0"
-			"frame_origin_y" "0"
-			"frame_origin_z" "0"
-			"spotlight" 	"1"
+			"force_pos"	"1"
+			"angles_x" "0"
+			"angles_y" "172"
+			"angles_z" "0"
+			"origin_x" "200"
+			"origin_y" "0"
+			"origin_z" "-60"
+			"frame_origin_x"	"0"
+			"frame_origin_y"	"0"
+			"frame_origin_z"	"0"
+			"spotlight" "1"
 			"modelname"		""
 		}
 
@@ -191,113 +190,6 @@
 				"origin_y"		"-2"
 				"origin_z"		"-82"
 			}
-		}
-	}
-
-	"CarryingWeapon"
-	{
-		"ControlName"			"EditablePanel"
-		"fieldName"				"CarryingWeapon"
-		"xpos"					"100"
-		"ypos"					"r27"
-		"zpos"					"100"
-		"wide"					"500"
-		"tall"	 				"28"
-		"bgcolor_override"		"Transparent"
-		"PaintBackgroundType"	"2"
-
-		"CarryingBackground"
-		{
-			"ControlName"			"CTFImagePanel"
-			"fieldName"				"CarryingBackground"
-			"xpos"					"0"
-			"ypos"					"0"
-			"zpos"					"0"
-			"wide"					"p1"
-			"tall"	 				"f0"
-			"autoResize"			"0"
-			"pinCorner"				"0"
-			"visible"				"1"
-			"enabled"				"1"
-			"image"					"../hud/color_panel_brown"
-			"scaleImage"			"1"
-			"teambg_1"				"../hud/color_panel_brown"
-			"teambg_2"				"../hud/color_panel_red"
-			"teambg_3"				"../hud/color_panel_blu"
-			"proportionaltoparent"	"1"
-
-			"src_corner_height"		"23"
-			"src_corner_width"		"23"
-			"draw_corner_width"		"5"
-			"draw_corner_height" 	"5"
-		}
-
-		"CarryingLabel"
-		{
-			"ControlName"		"CExLabel"
-			"fieldName"			"CarryingLabel"
-			"font"				"ReplayBrowserSmallest"
-			"xpos"				"5"
-			"ypos"				"3"
-			"zpos"				"1"
-			"wide"				"200"
-			"tall"	 			"f0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
-			"labelText"			"%carrying%"
-		}
-
-		"CarryingLabelDropShadow"
-		{
-			"ControlName"		"CExLabel"
-			"fieldName"			"CarryingLabelDropShadow"
-			"font"				"ReplayBrowserSmallest"
-			"xpos"				"p0.011"
-			"ypos"				"p0.12"
-			"zpos"				"0"
-			"wide"				"200"
-			"tall"	 			"f0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"0"
-			"enabled"			"0"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
-			"fgcolor_override"	"Black"
-			"labelText"			"%carrying%"
-		}
-
-		"OwnerLabel"
-		{
-			"ControlName"		"Label"
-			"fieldName"			"OwnerLabel"
-			"font"				"FontStoreOriginalPrice"
-			"xpos"				"5"
-			"ypos"				"14"
-			"zpos"				"0"
-			"wide"				"200"
-			"tall"	 			"f0"
-			"wide_minmode"		"0"
-			"tall_minmode"		"0"
-			"autoResize"		"0"
-			"pinCorner"			"0"
-			"visible"			"1"
-			"enabled"			"1"
-			"textAlignment"		"North-West"
-			"dulltext"			"0"
-			"brighttext"		"0"
-			"proportionaltoparent"	"1"
-			"auto_wide_tocontents"	"1"
 		}
 	}
 }
