@@ -1777,6 +1777,40 @@
 		"depressedFgColor_override" "75 125 255 255"
 	}
 
+	"ServersButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"ServersButton"
+		"xpos"			"0"
+		"ypos"			"6"
+		"wide"			"85"
+		"tall"			"14"
+		"visible"		"1"
+		"enabled"		"1"
+		"textinsetx"	"10"
+		"use_proportional_insets" "1"
+		"labelText"		"Servers"
+		"font"			"aRegular12"
+		"textAlignment"	"west"
+		"default"		"1"
+		"command"		"openserverbrowser"
+
+		"pin_to_sibling"	"ConsoleButton"
+		"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
+
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+
+		"border_default"	"NoBorder"
+		"border_armed"		"ahudMenuBorder"
+		"paintbackground"	"0"
+
+		"defaultFgColor_override" "ahudWhite"
+		"armedFgColor_override"   "ahudWhite"
+		"depressedFgColor_override" "75 125 255 255"
+	}
+
 	"GeneralStoreButton"
 	{
 		"ControlName"	"CExImageButton"
@@ -1863,7 +1897,7 @@
 		"default"		"1"
 		"Command"		"opentf2options"
 
-		"pin_to_sibling"	"ScoreboardButton"
+		"pin_to_sibling"	"ServersButton"
 		"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
 		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 
