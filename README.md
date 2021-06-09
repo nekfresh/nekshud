@@ -1,7 +1,7 @@
 # nekshud
 
 A custom HUD for Team Fortress 2.  
-Original HUD concept by [n0kk](https://github.com/n0kk).
+Original HUD concept by [n0kk](https://huds.tf/site/s-ahud).
 
 #### Features
 
