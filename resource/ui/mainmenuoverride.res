@@ -1350,8 +1350,8 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ahudLabel"
-		"font"			"aRegular48"
-		"labelText"		"ahud"
+		"font"			"aRegular32"
+		"labelText"		"nekshud"
 		"textAlignment"	"center"
 		"xpos"			"0"
 		"ypos"			"-10"
