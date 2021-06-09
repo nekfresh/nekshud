@@ -1,27 +1,13 @@
-# ahud
+# nekshud
 
 A custom HUD for Team Fortress 2.  
 Original HUD concept by [n0kk](https://github.com/n0kk).
 
 #### Features
 
-* Custom colors
-* Custom crosshairs
-* 6v6 scoreboard
-* Alternative styles
 * Home Server button
 * 16:9, 16:10, and 4:3 support
 * Matchmaking and MvM support
-
-#### Screenshots
-
-* [Main Menu](https://i.imgur.com/Kx70I3P.jpg)
-* [Buffed HP](https://i.imgur.com/WgR6jeE.jpg)
-* [Low HP & Ammo](https://i.imgur.com/AV3mNzm.jpg)
-* [Alt. Buffed HP](https://i.imgur.com/BKmdCnp.jpg)
-* [Alt. Low HP & Ammo](https://i.imgur.com/m4gILKr.jpg)
-* [Default scoreboard](https://i.imgur.com/cigUnUo.jpg)
-* [6v6 scoreboard](https://i.imgur.com/xya3Hkg.jpg)
 
 ## Installation
 
