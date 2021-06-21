@@ -6,6 +6,12 @@ Scheme
 		// CUSTOM COLORS
 		//---------------------------------------------
 
+		"threeblue"								"66 182 245 255"
+		
+		"Glitchhurt1"                           "255 255 0 255"
+		"Glitchhurt2"                           "255 20 147 255"
+		"Glitchhurt3"                           "100 190 179 255"
+
 		"Crosshair"				"0 0 0 255"
 		"CrosshairDamage"		"255 0 0 255"		// For no damage flash, set to the
 													// same value as Crosshair

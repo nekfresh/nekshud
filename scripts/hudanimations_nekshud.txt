@@ -55,24 +55,124 @@ event HudHealthDyingPulseStop
 //Low Ammo Pulse
 event HudLowAmmoPulse
 {
-	Animate LowAmmoBG		BgColor		"LowAmmo1"		Accel 0.0 0.0
-	Animate LowAmmoBG		Alpha		"200"		Accel 0.0 0.2
-	Animate LowAmmoBG		Alpha		"0"		Accel 0.2 0.4
 
-	RunEvent HudLowAmmoPulseLoop 0.4
+	Animate AmmoInClipShadow			 			FgColor 	"glitchhurt2" 							Linear 	0.05 	0.0
+	Animate AmmoInClipShadow						xpos 		"-1" 									Linear 	0.05 	0.0
+	Animate AmmoInClipShadow			 			ypos 		"31" 									Linear 	0.05 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"threeblue" 							Linear 	0.1 	0.0
+	Animate AmmoInClipShadow 						xpos 		"-1" 									Linear 	0.1 	0.0
+	Animate AmmoInClipShadow 						ypos 		"31" 									Linear 	0.1		0.0
+	Animate AmmoInClipShadow 						FgColor 	"glitchhurt2" 							Linear 	0.15 	0.0
+	Animate AmmoInClipShadow 						xpos 		"1" 									Linear 	0.15 	0.0
+	Animate AmmoInClipShadow 						ypos 		"33" 									Linear 	0.15 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"threeblue" 							Linear 	0.2 	0.0
+	Animate AmmoInClipShadow 						xpos 		"1" 									Linear 	0.2 	0.0
+	Animate AmmoInClipShadow 						ypos 		"33" 									Linear 	0.2 	0.0
+	Animate AmmoInClipShadow 						FgColor 	"glitchhurt2" 							Linear 	0.25 	0.0
+
+
+
+	Animate AmmoInClip								FgColor 	"glitchhurt1"							Linear 	0.0 	0.0
+	Animate AmmoInClip 								xpos		"1"									Linear 	0.05	0.0
+	Animate AmmoInClip 								ypos		"33"									Linear 	0.05	0.0
+	Animate AmmoInClip 								xpos		"-1"										Linear 	0.1		0.0
+	Animate AmmoInClip 								ypos		"31"									Linear 	0.1		0.0
+	Animate AmmoInClip 								xpos		"1"										Linear 	0.15	0.0
+	Animate AmmoInClip								ypos		"33"										Linear 	0.15	0.0
+	Animate AmmoInClip 								xpos		"-1"									Linear 	0.2		0.0
+	Animate AmmoInClip 								ypos		"31"										Linear 	0.2		0.0		
+	
+
+	Animate AmmoInReserveShadow			 			FgColor 	"glitchhurt2" 							Linear 	0.05 	0.0
+	Animate AmmoInReserveShadow						xpos 		"78" 									Linear 	0.05 	0.0
+	Animate AmmoInReserveShadow			 			ypos 		"32" 									Linear 	0.05 	0.0
+	Animate AmmoInReserveShadow 					FgColor 	"threeblue" 							Linear 	0.1 	0.0
+	Animate AmmoInReserveShadow 					xpos 		"78" 									Linear 	0.1 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"32" 									Linear 	0.1		0.0
+	Animate AmmoInReserveShadow 					FgColor 	"glitchhurt2" 							Linear 	0.15 	0.0
+	Animate AmmoInReserveShadow 					xpos 		"76" 									Linear 	0.15 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"30" 									Linear 	0.15 	0.0
+	Animate AmmoInReserveShadow 					FgColor 	"threeblue" 							Linear 	0.2 	0.0
+	Animate AmmoInReserveShadow 					xpos 		"76" 									Linear 	0.2 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"30" 									Linear 	0.2 	0.0
+	Animate AmmoInReserveShadow 					FgColor 	"glitchhurt2" 							Linear 	0.25 	0.0
+
+
+
+	Animate AmmoInReserve							FgColor 	"glitchhurt1"							Linear 	0.0 	0.0
+	Animate AmmoInReserve 							xpos		"76"									Linear 	0.05	0.0
+	Animate AmmoInReserve 							ypos		"30"									Linear 	0.05	0.0
+	Animate AmmoInReserve 							xpos		"78"										Linear 	0.1		0.0
+	Animate AmmoInReserve 							ypos		"32"									Linear 	0.1		0.0
+	Animate AmmoInReserve 							xpos		"76"										Linear 	0.15	0.0
+	Animate AmmoInReserve							ypos		"30"										Linear 	0.15	0.0
+	Animate AmmoInReserve 							xpos		"78"									Linear 	0.2		0.0
+	Animate AmmoInReserve 							ypos		"32"										Linear 	0.2		0.0	
+
+
+	Animate AmmoNoClipShadow			 			FgColor 	"glitchhurt2" 							Linear 	0.05 	0.0
+	Animate AmmoNoClipShadow						xpos 		"23" 									Linear 	0.05 	0.0
+	Animate AmmoNoClipShadow			 			ypos 		"31" 									Linear 	0.05 	0.0
+	Animate AmmoNoClipShadow 						FgColor 	"threeblue" 							Linear 	0.1 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"23" 									Linear 	0.1 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"31" 									Linear 	0.1		0.0
+	Animate AmmoNoClipShadow 						FgColor 	"glitchhurt2" 							Linear 	0.15 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"25" 									Linear 	0.15 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"33" 									Linear 	0.15 	0.0
+	Animate AmmoNoClipShadow 						FgColor 	"threeblue" 							Linear 	0.2 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"25" 									Linear 	0.2 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"33" 									Linear 	0.2 	0.0
+	Animate AmmoNoClipShadow 						FgColor 	"glitchhurt2" 							Linear 	0.25 	0.0
+
+
+
+	Animate AmmoNoClip								FgColor 	"glitchhurt1"							Linear 	0.0 	0.0
+	Animate AmmoNoClip 								xpos		"25"									Linear 	0.05	0.0
+	Animate AmmoNoClip 								ypos		"33"									Linear 	0.05	0.0
+	Animate AmmoNoClip 								xpos		"23"										Linear 	0.1		0.0
+	Animate AmmoNoClip 								ypos		"31"									Linear 	0.1		0.0
+	Animate AmmoNoClip 								xpos		"25"										Linear 	0.15	0.0
+	Animate AmmoNoClip								ypos		"33"										Linear 	0.15	0.0
+	Animate AmmoNoClip 								xpos		"23"									Linear 	0.2		0.0
+	Animate AmmoNoClip 								ypos		"31"										Linear 	0.2		0.0	
+
+	RunEvent HudLowAmmoPulseLoop					0.30
 }
 
 // call to loop HudLowAmmoPulse
 event HudLowAmmoPulseLoop
 {
-	RunEvent HudLowAmmoPulse 0.0
+	RunEvent HudLowAmmoPulse						0.0
 }
 
 event HudLowAmmoPulseStop
 {
-	StopEvent HudLowAmmoPulse 0.0
-	StopEvent HudLowAmmoPulseLoop 0.0
+	StopEvent HudLowAmmoPulse 						0.0
+	StopEvent HudLowAmmoPulseLoop 					0.0
+	
+	//reset colors
+	
+	Animate AmmoInClipShadow 						FgColor 	"ShadowBlack" 							Linear 	0.0 0.0
+	Animate AmmoInReserveShadow 					FgColor 	"ShadowBlack" 							Linear 	0.0 0.0
+	Animate AmmoNoClipShadow 						FgColor 	"ShadowBlack" 							Linear 	0.0 0.0
 
-	Animate LowAmmoBG		BgColor		"Blank"		Accel 0.0 0.0
-	Animate LowAmmoBG		Alpha		"0"		Accel 0.0 0.0
+	Animate AmmoInClip 								FgColor 	"Ammo In Clip" 						Linear 	0.0 0.0
+	Animate AmmoInReserve 							FgColor 	"Ammo In Reserve" 					Linear 	0.0 0.0
+	Animate AmmoNoClip 								FgColor 	"Ammo No Clip" 						Linear 	0.0 0.0
+	
+	//reset positions
+
+	Animate AmmoInClipShadow  						ypos		"-2"								Accel	0.0		0.0	
+	Animate AmmoInClipShadow  						xpos		"-2"								Aceel 	0.0		0.0	
+	Animate AmmoInReserveShadow 					xpos 		"-1" 								Accel 	0.0 	0.0
+	Animate AmmoInReserveShadow 					ypos 		"-1" 								Accel 	0.0 	0.0
+	Animate AmmoNoClipShadow 						xpos 		"-2" 								Accel 	0.0 	0.0
+	Animate AmmoNoClipShadow 						ypos 		"-2" 								Accel 	0.0 	0.0
+
+	Animate AmmoInClip	  							ypos		"30"									Accel	0.0		0.0	
+	Animate AmmoInClip								xpos		"0"									Accel 	0.0		0.0	
+	Animate AmmoInReserve	 						xpos 		"75" 								Accel 	0.0 	0.0
+	Animate AmmoInReserve							ypos 		"38" 								Accel 	0.0 	0.0
+	Animate AmmoNoClip		 						xpos 		"17" 								Accel 	0.0 	0.0
+	Animate AmmoNoClip		 						ypos 		"35" 								Accel 	0.0 	0.0
 }
