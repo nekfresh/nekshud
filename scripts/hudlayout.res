@@ -470,15 +470,15 @@
 		"fieldName" "HudDeathNotice"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	 "r640"
+		"xpos"	 "r610"
 		"ypos"	 "18"
-		"wide"	 "628"
-		"tall"	 "468"
+		"wide"	 "600"
+		"tall"	 "450"
 
-		"MaxDeathNotices" "6"
-		"IconScale"	  "0.35"
+		"MaxDeathNotices" "8"
+		"IconScale"	  	  "0.30"
 		"LineHeight"	  "12"
-		"LineSpacing"	  "0"
+		"LineSpacing"	  "1"
 		"CornerRadius"	  "0"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
 		
